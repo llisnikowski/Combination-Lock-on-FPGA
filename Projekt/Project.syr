@@ -1,0 +1,1947 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/student/LLVI/Xilinx/Projekt/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to D:/student/LLVI/Xilinx/Projekt/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Project.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Project.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Project"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : Project
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Project.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "binhex1.vf" in library work
+Compiling verilog file "enkoder.vf" in library work
+Module <binhex1> compiled
+Module <FTCE_MXILINX_enkoder> compiled
+Module <CB16CE_MXILINX_enkoder> compiled
+Compiling verilog file "display7segment.vf" in library work
+Module <enkoder> compiled
+Module <INV4_MXILINX_display7segment> compiled
+Module <D2_4E_MXILINX_display7segment> compiled
+Module <FTCE_MXILINX_display7segment> compiled
+Module <CB16CE_MXILINX_display7segment> compiled
+Module <M2_1E_MXILINX_display7segment> compiled
+Module <M4_1E_MXILINX_display7segment> compiled
+Compiling verilog file "demux4.vf" in library work
+Module <display7segment> compiled
+Compiling verilog file "cb4cled_x4.vf" in library work
+Module <demux4> compiled
+Module <M2_1B1_MXILINX_cb4cled_x4> compiled
+Module <M2_1_MXILINX_cb4cled_x4> compiled
+Module <FTCLEX_MXILINX_cb4cled_x4> compiled
+Module <CB4CLED_MXILINX_cb4cled_x4> compiled
+Compiling verilog file "Project.vf" in library work
+Module <cb4cled_x4> compiled
+Module <FTRSE_MXILINX_Project> compiled
+Module <CB2RE_MXILINX_Project> compiled
+Module <OR8_MXILINX_Project> compiled
+Module <COMPM16_MXILINX_Project> compiled
+Module <Project> compiled
+No errors in compilation
+Analysis of file <"Project.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Project> in library <work>.
+
+Analyzing hierarchy for module <display7segment> in library <work>.
+
+Analyzing hierarchy for module <cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <COMPM16_MXILINX_Project> in library <work>.
+
+Analyzing hierarchy for module <demux4> in library <work>.
+
+Analyzing hierarchy for module <CB2RE_MXILINX_Project> in library <work>.
+
+Analyzing hierarchy for module <enkoder> in library <work>.
+
+Analyzing hierarchy for module <binhex1> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <M4_1E_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <CB16CE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <D2_4E_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <INV4_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <CB4CLED_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <CB4CLED_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <CB4CLED_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <CB4CLED_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <OR8_MXILINX_Project> in library <work>.
+
+Analyzing hierarchy for module <OR8_MXILINX_Project> in library <work>.
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Project> in library <work>.
+
+Analyzing hierarchy for module <FTRSE_MXILINX_Project> in library <work>.
+
+Analyzing hierarchy for module <CB16CE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <M2_1E_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_display7segment> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <FTCE_MXILINX_enkoder> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_cb4cled_x4> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Project>.
+Module <Project> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_58> in unit <Project>.
+    Set user-defined property "HU_SET =  XLXI_37_4" for instance <XLXI_37> in unit <Project>.
+    Set user-defined property "HU_SET =  XLXI_40_5" for instance <XLXI_40> in unit <Project>.
+Analyzing module <display7segment> in library <work>.
+Module <display7segment> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_2_21" for instance <XLXI_2> in unit <display7segment>.
+    Set user-defined property "HU_SET =  XLXI_37_22" for instance <XLXI_37> in unit <display7segment>.
+    Set user-defined property "HU_SET =  XLXI_55_23" for instance <XLXI_55> in unit <display7segment>.
+    Set user-defined property "HU_SET =  XLXI_6_20" for instance <XLXI_6> in unit <display7segment>.
+    Set user-defined property "HU_SET =  XLXI_64_24" for instance <XLXI_64> in unit <display7segment>.
+    Set user-defined property "HU_SET =  XLXI_7_18" for instance <XLXI_7> in unit <display7segment>.
+    Set user-defined property "HU_SET =  XLXI_8_19" for instance <XLXI_8> in unit <display7segment>.
+Analyzing module <binhex1> in library <work>.
+Module <binhex1> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_display7segment.1> in library <work>.
+Module <M4_1E_MXILINX_display7segment.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_display7segment.1>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_display7segment.1>.
+Analyzing module <M2_1E_MXILINX_display7segment.1> in library <work>.
+Module <M2_1E_MXILINX_display7segment.1> is correct for synthesis.
+ 
+Analyzing module <M2_1E_MXILINX_display7segment.2> in library <work>.
+Module <M2_1E_MXILINX_display7segment.2> is correct for synthesis.
+ 
+Analyzing module <M4_1E_MXILINX_display7segment.2> in library <work>.
+Module <M4_1E_MXILINX_display7segment.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_display7segment.2>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_display7segment.2>.
+Analyzing module <M4_1E_MXILINX_display7segment.3> in library <work>.
+Module <M4_1E_MXILINX_display7segment.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_display7segment.3>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_display7segment.3>.
+Analyzing module <M4_1E_MXILINX_display7segment.4> in library <work>.
+Module <M4_1E_MXILINX_display7segment.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_M01_17" for instance <I_M01> in unit <M4_1E_MXILINX_display7segment.4>.
+    Set user-defined property "HU_SET =  I_M23_16" for instance <I_M23> in unit <M4_1E_MXILINX_display7segment.4>.
+Analyzing module <CB16CE_MXILINX_display7segment> in library <work>.
+Module <CB16CE_MXILINX_display7segment> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_1" for instance <I_Q0> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q1_0" for instance <I_Q1> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q10_10" for instance <I_Q10> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q11_11" for instance <I_Q11> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q12_12" for instance <I_Q12> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q13_13" for instance <I_Q13> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q14_14" for instance <I_Q14> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q15_15" for instance <I_Q15> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q2_3" for instance <I_Q2> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q3_2" for instance <I_Q3> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q4_7" for instance <I_Q4> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q5_6" for instance <I_Q5> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q6_5" for instance <I_Q6> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q7_4" for instance <I_Q7> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q8_8" for instance <I_Q8> in unit <CB16CE_MXILINX_display7segment>.
+    Set user-defined property "HU_SET =  I_Q9_9" for instance <I_Q9> in unit <CB16CE_MXILINX_display7segment>.
+Analyzing module <FTCE_MXILINX_display7segment.1> in library <work>.
+Module <FTCE_MXILINX_display7segment.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.1>.
+Analyzing module <FTCE_MXILINX_display7segment.2> in library <work>.
+Module <FTCE_MXILINX_display7segment.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.2>.
+Analyzing module <FTCE_MXILINX_display7segment.3> in library <work>.
+Module <FTCE_MXILINX_display7segment.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.3>.
+Analyzing module <FTCE_MXILINX_display7segment.4> in library <work>.
+Module <FTCE_MXILINX_display7segment.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.4>.
+Analyzing module <FTCE_MXILINX_display7segment.5> in library <work>.
+Module <FTCE_MXILINX_display7segment.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.5>.
+Analyzing module <FTCE_MXILINX_display7segment.6> in library <work>.
+Module <FTCE_MXILINX_display7segment.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.6>.
+Analyzing module <FTCE_MXILINX_display7segment.7> in library <work>.
+Module <FTCE_MXILINX_display7segment.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.7>.
+Analyzing module <FTCE_MXILINX_display7segment.8> in library <work>.
+Module <FTCE_MXILINX_display7segment.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.8>.
+Analyzing module <FTCE_MXILINX_display7segment.9> in library <work>.
+Module <FTCE_MXILINX_display7segment.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.9>.
+Analyzing module <FTCE_MXILINX_display7segment.10> in library <work>.
+Module <FTCE_MXILINX_display7segment.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.10>.
+Analyzing module <FTCE_MXILINX_display7segment.11> in library <work>.
+Module <FTCE_MXILINX_display7segment.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.11>.
+Analyzing module <FTCE_MXILINX_display7segment.12> in library <work>.
+Module <FTCE_MXILINX_display7segment.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.12>.
+Analyzing module <FTCE_MXILINX_display7segment.13> in library <work>.
+Module <FTCE_MXILINX_display7segment.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.13>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.13>.
+Analyzing module <FTCE_MXILINX_display7segment.14> in library <work>.
+Module <FTCE_MXILINX_display7segment.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.14>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.14>.
+Analyzing module <FTCE_MXILINX_display7segment.15> in library <work>.
+Module <FTCE_MXILINX_display7segment.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.15>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.15>.
+Analyzing module <FTCE_MXILINX_display7segment.16> in library <work>.
+Module <FTCE_MXILINX_display7segment.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.16>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_display7segment.16>.
+Analyzing module <D2_4E_MXILINX_display7segment> in library <work>.
+Module <D2_4E_MXILINX_display7segment> is correct for synthesis.
+ 
+Analyzing module <INV4_MXILINX_display7segment> in library <work>.
+Module <INV4_MXILINX_display7segment> is correct for synthesis.
+ 
+Analyzing module <cb4cled_x4> in library <work>.
+Module <cb4cled_x4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_6> in unit <cb4cled_x4>.
+    Set user-defined property "INIT =  0" for instance <XLXI_7> in unit <cb4cled_x4>.
+    Set user-defined property "INIT =  0" for instance <XLXI_8> in unit <cb4cled_x4>.
+    Set user-defined property "INIT =  0" for instance <XLXI_9> in unit <cb4cled_x4>.
+    Set user-defined property "HU_SET =  XLXI_2_9" for instance <XLXI_2> in unit <cb4cled_x4>.
+    Set user-defined property "HU_SET =  XLXI_3_10" for instance <XLXI_3> in unit <cb4cled_x4>.
+    Set user-defined property "HU_SET =  XLXI_4_11" for instance <XLXI_4> in unit <cb4cled_x4>.
+    Set user-defined property "HU_SET =  XLXI_5_12" for instance <XLXI_5> in unit <cb4cled_x4>.
+Analyzing module <CB4CLED_MXILINX_cb4cled_x4.1> in library <work>.
+Module <CB4CLED_MXILINX_cb4cled_x4.1> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_4" for instance <I_Q0> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_Q1_3" for instance <I_Q1> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_Q3_1" for instance <I_Q3> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_T1_8" for instance <I_T1> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_T2_5" for instance <I_T2> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_T3_6" for instance <I_T3> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_TC_7" for instance <I_TC> in unit <CB4CLED_MXILINX_cb4cled_x4.1>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.1> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.1>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.1>.
+Analyzing module <M2_1_MXILINX_cb4cled_x4.4> in library <work>.
+Module <M2_1_MXILINX_cb4cled_x4.4> is correct for synthesis.
+ 
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.2> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.2>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.3> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.3>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.4> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.4>.
+Analyzing module <M2_1_MXILINX_cb4cled_x4.1> in library <work>.
+Module <M2_1_MXILINX_cb4cled_x4.1> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_cb4cled_x4> in library <work>.
+Module <M2_1B1_MXILINX_cb4cled_x4> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_cb4cled_x4.2> in library <work>.
+Module <M2_1_MXILINX_cb4cled_x4.2> is correct for synthesis.
+ 
+Analyzing module <M2_1_MXILINX_cb4cled_x4.3> in library <work>.
+Module <M2_1_MXILINX_cb4cled_x4.3> is correct for synthesis.
+ 
+Analyzing module <CB4CLED_MXILINX_cb4cled_x4.2> in library <work>.
+Module <CB4CLED_MXILINX_cb4cled_x4.2> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_4" for instance <I_Q0> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_Q1_3" for instance <I_Q1> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_Q3_1" for instance <I_Q3> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_T1_8" for instance <I_T1> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_T2_5" for instance <I_T2> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_T3_6" for instance <I_T3> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+    Set user-defined property "HU_SET =  I_TC_7" for instance <I_TC> in unit <CB4CLED_MXILINX_cb4cled_x4.2>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.5> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.5>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.5>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.6> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.6>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.6>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.7> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.7>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.7>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.8> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.8>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.8>.
+Analyzing module <CB4CLED_MXILINX_cb4cled_x4.3> in library <work>.
+Module <CB4CLED_MXILINX_cb4cled_x4.3> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_4" for instance <I_Q0> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_Q1_3" for instance <I_Q1> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_Q3_1" for instance <I_Q3> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_T1_8" for instance <I_T1> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_T2_5" for instance <I_T2> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_T3_6" for instance <I_T3> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+    Set user-defined property "HU_SET =  I_TC_7" for instance <I_TC> in unit <CB4CLED_MXILINX_cb4cled_x4.3>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.9> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.9>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.9>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.10> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.10>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.10>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.11> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.11>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.11>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.12> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.12>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.12>.
+Analyzing module <CB4CLED_MXILINX_cb4cled_x4.4> in library <work>.
+Module <CB4CLED_MXILINX_cb4cled_x4.4> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_4" for instance <I_Q0> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_Q1_3" for instance <I_Q1> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_Q2_2" for instance <I_Q2> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_Q3_1" for instance <I_Q3> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_T1_8" for instance <I_T1> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_T2_5" for instance <I_T2> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_T3_6" for instance <I_T3> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+    Set user-defined property "HU_SET =  I_TC_7" for instance <I_TC> in unit <CB4CLED_MXILINX_cb4cled_x4.4>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.13> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.13>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.13>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.13>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.14> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.14>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.14>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.14>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.15> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.15>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.15>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.15>.
+Analyzing module <FTCLEX_MXILINX_cb4cled_x4.16> in library <work>.
+Module <FTCLEX_MXILINX_cb4cled_x4.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.16>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_cb4cled_x4.16>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_cb4cled_x4.16>.
+Analyzing module <COMPM16_MXILINX_Project> in library <work>.
+Module <COMPM16_MXILINX_Project> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_36_124_3" for instance <I_36_124> in unit <COMPM16_MXILINX_Project>.
+    Set user-defined property "HU_SET =  I_36_125_2" for instance <I_36_125> in unit <COMPM16_MXILINX_Project>.
+Analyzing module <OR8_MXILINX_Project.1> in library <work>.
+Module <OR8_MXILINX_Project.1> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_91> in unit <OR8_MXILINX_Project.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_116> in unit <OR8_MXILINX_Project.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_117> in unit <OR8_MXILINX_Project.1>.
+Analyzing module <OR8_MXILINX_Project.2> in library <work>.
+Module <OR8_MXILINX_Project.2> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_91> in unit <OR8_MXILINX_Project.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_116> in unit <OR8_MXILINX_Project.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_117> in unit <OR8_MXILINX_Project.2>.
+Analyzing module <demux4> in library <work>.
+Module <demux4> is correct for synthesis.
+ 
+Analyzing module <CB2RE_MXILINX_Project> in library <work>.
+Module <CB2RE_MXILINX_Project> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_0" for instance <I_Q0> in unit <CB2RE_MXILINX_Project>.
+    Set user-defined property "HU_SET =  I_Q1_1" for instance <I_Q1> in unit <CB2RE_MXILINX_Project>.
+Analyzing module <FTRSE_MXILINX_Project.1> in library <work>.
+Module <FTRSE_MXILINX_Project.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Project.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Project.1>.
+Analyzing module <FTRSE_MXILINX_Project.2> in library <work>.
+Module <FTRSE_MXILINX_Project.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTRSE_MXILINX_Project.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTRSE_MXILINX_Project.2>.
+Analyzing module <enkoder> in library <work>.
+Module <enkoder> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <XLXI_2> in unit <enkoder>.
+    Set user-defined property "INIT =  0" for instance <XLXI_22> in unit <enkoder>.
+    Set user-defined property "HU_SET =  XLXI_3_16" for instance <XLXI_3> in unit <enkoder>.
+Analyzing module <CB16CE_MXILINX_enkoder> in library <work>.
+Module <CB16CE_MXILINX_enkoder> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_1" for instance <I_Q0> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q1_0" for instance <I_Q1> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q10_10" for instance <I_Q10> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q11_11" for instance <I_Q11> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q12_12" for instance <I_Q12> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q13_13" for instance <I_Q13> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q14_14" for instance <I_Q14> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q15_15" for instance <I_Q15> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q2_3" for instance <I_Q2> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q3_2" for instance <I_Q3> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q4_7" for instance <I_Q4> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q5_6" for instance <I_Q5> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q6_5" for instance <I_Q6> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q7_4" for instance <I_Q7> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q8_8" for instance <I_Q8> in unit <CB16CE_MXILINX_enkoder>.
+    Set user-defined property "HU_SET =  I_Q9_9" for instance <I_Q9> in unit <CB16CE_MXILINX_enkoder>.
+Analyzing module <FTCE_MXILINX_enkoder.1> in library <work>.
+Module <FTCE_MXILINX_enkoder.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.1>.
+Analyzing module <FTCE_MXILINX_enkoder.2> in library <work>.
+Module <FTCE_MXILINX_enkoder.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.2>.
+Analyzing module <FTCE_MXILINX_enkoder.3> in library <work>.
+Module <FTCE_MXILINX_enkoder.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.3>.
+Analyzing module <FTCE_MXILINX_enkoder.4> in library <work>.
+Module <FTCE_MXILINX_enkoder.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.4>.
+Analyzing module <FTCE_MXILINX_enkoder.5> in library <work>.
+Module <FTCE_MXILINX_enkoder.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.5>.
+Analyzing module <FTCE_MXILINX_enkoder.6> in library <work>.
+Module <FTCE_MXILINX_enkoder.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.6>.
+Analyzing module <FTCE_MXILINX_enkoder.7> in library <work>.
+Module <FTCE_MXILINX_enkoder.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.7>.
+Analyzing module <FTCE_MXILINX_enkoder.8> in library <work>.
+Module <FTCE_MXILINX_enkoder.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.8>.
+Analyzing module <FTCE_MXILINX_enkoder.9> in library <work>.
+Module <FTCE_MXILINX_enkoder.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.9>.
+Analyzing module <FTCE_MXILINX_enkoder.10> in library <work>.
+Module <FTCE_MXILINX_enkoder.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.10>.
+Analyzing module <FTCE_MXILINX_enkoder.11> in library <work>.
+Module <FTCE_MXILINX_enkoder.11> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.11>.
+Analyzing module <FTCE_MXILINX_enkoder.12> in library <work>.
+Module <FTCE_MXILINX_enkoder.12> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.12>.
+Analyzing module <FTCE_MXILINX_enkoder.13> in library <work>.
+Module <FTCE_MXILINX_enkoder.13> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.13>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.13>.
+Analyzing module <FTCE_MXILINX_enkoder.14> in library <work>.
+Module <FTCE_MXILINX_enkoder.14> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.14>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.14>.
+Analyzing module <FTCE_MXILINX_enkoder.15> in library <work>.
+Module <FTCE_MXILINX_enkoder.15> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.15>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.15>.
+Analyzing module <FTCE_MXILINX_enkoder.16> in library <work>.
+Module <FTCE_MXILINX_enkoder.16> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.16>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_enkoder.16>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <demux4>.
+    Related source file is "demux4.vf".
+Unit <demux4> synthesized.
+
+
+Synthesizing Unit <binhex1>.
+    Related source file is "binhex1.vf".
+Unit <binhex1> synthesized.
+
+
+Synthesizing Unit <D2_4E_MXILINX_display7segment>.
+    Related source file is "display7segment.vf".
+Unit <D2_4E_MXILINX_display7segment> synthesized.
+
+
+Synthesizing Unit <INV4_MXILINX_display7segment>.
+    Related source file is "display7segment.vf".
+Unit <INV4_MXILINX_display7segment> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_display7segment_1>.
+    Related source file is "display7segment.vf".
+Unit <M2_1E_MXILINX_display7segment_1> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_display7segment_2>.
+    Related source file is "display7segment.vf".
+Unit <M2_1E_MXILINX_display7segment_2> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_1>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_1> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_2>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_2> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_3>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_3> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_4>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_4> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_5>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_5> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_6>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_6> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_7>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_7> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_8>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_8> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_9>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_9> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_10>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_10> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_11>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_11> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_12>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_12> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_13>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_13> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_14>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_14> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_15>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_15> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_display7segment_16>.
+    Related source file is "display7segment.vf".
+Unit <FTCE_MXILINX_display7segment_16> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_cb4cled_x4_1>.
+    Related source file is "cb4cled_x4.vf".
+Unit <M2_1_MXILINX_cb4cled_x4_1> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_cb4cled_x4>.
+    Related source file is "cb4cled_x4.vf".
+Unit <M2_1B1_MXILINX_cb4cled_x4> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_cb4cled_x4_2>.
+    Related source file is "cb4cled_x4.vf".
+Unit <M2_1_MXILINX_cb4cled_x4_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_cb4cled_x4_3>.
+    Related source file is "cb4cled_x4.vf".
+Unit <M2_1_MXILINX_cb4cled_x4_3> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_cb4cled_x4_4>.
+    Related source file is "cb4cled_x4.vf".
+Unit <M2_1_MXILINX_cb4cled_x4_4> synthesized.
+
+
+Synthesizing Unit <OR8_MXILINX_Project_1>.
+    Related source file is "Project.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <OR8_MXILINX_Project_1> synthesized.
+
+
+Synthesizing Unit <OR8_MXILINX_Project_2>.
+    Related source file is "Project.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <OR8_MXILINX_Project_2> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Project_1>.
+    Related source file is "Project.vf".
+Unit <FTRSE_MXILINX_Project_1> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_Project_2>.
+    Related source file is "Project.vf".
+Unit <FTRSE_MXILINX_Project_2> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_1>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_1> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_2>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_2> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_3>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_3> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_4>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_4> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_5>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_5> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_6>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_6> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_7>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_7> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_8>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_8> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_9>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_9> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_10>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_10> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_11>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_11> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_12>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_12> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_13>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_13> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_14>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_14> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_15>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_15> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_enkoder_16>.
+    Related source file is "enkoder.vf".
+Unit <FTCE_MXILINX_enkoder_16> synthesized.
+
+
+Synthesizing Unit <COMPM16_MXILINX_Project>.
+    Related source file is "Project.vf".
+Unit <COMPM16_MXILINX_Project> synthesized.
+
+
+Synthesizing Unit <CB2RE_MXILINX_Project>.
+    Related source file is "Project.vf".
+Unit <CB2RE_MXILINX_Project> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_display7segment_1>.
+    Related source file is "display7segment.vf".
+Unit <M4_1E_MXILINX_display7segment_1> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_display7segment_2>.
+    Related source file is "display7segment.vf".
+Unit <M4_1E_MXILINX_display7segment_2> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_display7segment_3>.
+    Related source file is "display7segment.vf".
+Unit <M4_1E_MXILINX_display7segment_3> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_display7segment_4>.
+    Related source file is "display7segment.vf".
+Unit <M4_1E_MXILINX_display7segment_4> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_display7segment>.
+    Related source file is "display7segment.vf".
+Unit <CB16CE_MXILINX_display7segment> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_1>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_1> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_2>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_2> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_3>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_3> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_4>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_4> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_5>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_5> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_6>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_6> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_7>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_7> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_8>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_8> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_9>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_9> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_10>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_10> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_11>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_11> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_12>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_12> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_13>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_13> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_14>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_14> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_15>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_15> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_cb4cled_x4_16>.
+    Related source file is "cb4cled_x4.vf".
+Unit <FTCLEX_MXILINX_cb4cled_x4_16> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_enkoder>.
+    Related source file is "enkoder.vf".
+Unit <CB16CE_MXILINX_enkoder> synthesized.
+
+
+Synthesizing Unit <display7segment>.
+    Related source file is "display7segment.vf".
+WARNING:Xst:646 - Signal <mag<13:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <display7segment> synthesized.
+
+
+Synthesizing Unit <enkoder>.
+    Related source file is "enkoder.vf".
+WARNING:Xst:646 - Signal <mag<14:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <enkoder> synthesized.
+
+
+Synthesizing Unit <CB4CLED_MXILINX_cb4cled_x4_1>.
+    Related source file is "cb4cled_x4.vf".
+Unit <CB4CLED_MXILINX_cb4cled_x4_1> synthesized.
+
+
+Synthesizing Unit <CB4CLED_MXILINX_cb4cled_x4_2>.
+    Related source file is "cb4cled_x4.vf".
+Unit <CB4CLED_MXILINX_cb4cled_x4_2> synthesized.
+
+
+Synthesizing Unit <CB4CLED_MXILINX_cb4cled_x4_3>.
+    Related source file is "cb4cled_x4.vf".
+Unit <CB4CLED_MXILINX_cb4cled_x4_3> synthesized.
+
+
+Synthesizing Unit <CB4CLED_MXILINX_cb4cled_x4_4>.
+    Related source file is "cb4cled_x4.vf".
+Unit <CB4CLED_MXILINX_cb4cled_x4_4> synthesized.
+
+
+Synthesizing Unit <cb4cled_x4>.
+    Related source file is "cb4cled_x4.vf".
+Unit <cb4cled_x4> synthesized.
+
+
+Synthesizing Unit <Project>.
+    Related source file is "Project.vf".
+Unit <Project> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s100e.nph' in environment D:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Project> ...
+
+Optimizing unit <binhex1> ...
+
+Optimizing unit <D2_4E_MXILINX_display7segment> ...
+
+Optimizing unit <INV4_MXILINX_display7segment> ...
+
+Optimizing unit <M2_1E_MXILINX_display7segment_1> ...
+
+Optimizing unit <M2_1E_MXILINX_display7segment_2> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_1> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_2> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_3> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_4> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_5> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_6> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_7> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_8> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_9> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_10> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_11> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_12> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_13> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_14> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_15> ...
+
+Optimizing unit <FTCE_MXILINX_display7segment_16> ...
+
+Optimizing unit <M2_1_MXILINX_cb4cled_x4_1> ...
+
+Optimizing unit <M2_1B1_MXILINX_cb4cled_x4> ...
+
+Optimizing unit <M2_1_MXILINX_cb4cled_x4_2> ...
+
+Optimizing unit <M2_1_MXILINX_cb4cled_x4_3> ...
+
+Optimizing unit <M2_1_MXILINX_cb4cled_x4_4> ...
+
+Optimizing unit <OR8_MXILINX_Project_1> ...
+
+Optimizing unit <OR8_MXILINX_Project_2> ...
+
+Optimizing unit <FTRSE_MXILINX_Project_1> ...
+
+Optimizing unit <FTRSE_MXILINX_Project_2> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_1> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_2> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_3> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_4> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_5> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_6> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_7> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_8> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_9> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_10> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_11> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_12> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_13> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_14> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_15> ...
+
+Optimizing unit <FTCE_MXILINX_enkoder_16> ...
+
+Optimizing unit <COMPM16_MXILINX_Project> ...
+
+Optimizing unit <CB2RE_MXILINX_Project> ...
+
+Optimizing unit <M4_1E_MXILINX_display7segment_1> ...
+
+Optimizing unit <M4_1E_MXILINX_display7segment_2> ...
+
+Optimizing unit <M4_1E_MXILINX_display7segment_3> ...
+
+Optimizing unit <M4_1E_MXILINX_display7segment_4> ...
+
+Optimizing unit <CB16CE_MXILINX_display7segment> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_1> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_2> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_3> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_4> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_5> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_6> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_7> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_8> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_9> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_10> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_11> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_12> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_13> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_14> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_15> ...
+
+Optimizing unit <FTCLEX_MXILINX_cb4cled_x4_16> ...
+
+Optimizing unit <CB16CE_MXILINX_enkoder> ...
+
+Optimizing unit <CB4CLED_MXILINX_cb4cled_x4_1> ...
+
+Optimizing unit <CB4CLED_MXILINX_cb4cled_x4_2> ...
+
+Optimizing unit <CB4CLED_MXILINX_cb4cled_x4_3> ...
+
+Optimizing unit <CB4CLED_MXILINX_cb4cled_x4_4> ...
+
+Optimizing unit <cb4cled_x4> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Project, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Project.ngr
+Top Level Output File Name         : Project
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 401
+#      AND2                        : 62
+#      AND2B1                      : 47
+#      AND2B2                      : 10
+#      AND3                        : 28
+#      AND3B1                      : 30
+#      AND3B2                      : 5
+#      AND3B3                      : 5
+#      AND4                        : 17
+#      AND4B1                      : 4
+#      AND4B2                      : 3
+#      AND4B3                      : 5
+#      AND4B4                      : 4
+#      AND5                        : 8
+#      BUF                         : 16
+#      GND                         : 4
+#      INV                         : 6
+#      MUXF5                       : 4
+#      OR2                         : 66
+#      OR3                         : 3
+#      OR4                         : 8
+#      VCC                         : 8
+#      XNOR2                       : 8
+#      XOR2                        : 50
+# FlipFlops/Latches                : 57
+#      FD                          : 7
+#      FDCE                        : 48
+#      FDRE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 3
+#      OBUF                        : 13
+# Logical                          : 7
+#      NOR2                        : 7
+# Others                           : 6
+#      FMAP                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       27  out of    960     2%  
+ Number of Slice Flip Flops:             57  out of   1920     2%  
+ Number of 4 input LUTs:                  6  out of   1920     0%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of     83    20%  
+    IOB Flip Flops:                       3
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)            | Load  |
+-----------------------------------+----------------------------------+-------+
+sync                               | BUFGP                            | 37    |
+XLXI_74/XLXI_3/I_Q15/Q             | NONE(XLXI_74/XLXI_22)            | 2     |
+XLXN_292                           | NONE(XLXI_40/I_Q0/I_36_35)       | 2     |
+XLXI_18/XLXN_2                     | NONE(XLXI_18/XLXI_5/I_Q0/I_36_35)| 4     |
+XLXI_18/XLXN_3                     | NONE(XLXI_18/XLXI_4/I_Q0/I_36_35)| 4     |
+XLXI_18/XLXN_4                     | NONE(XLXI_18/XLXI_3/I_Q0/I_36_35)| 4     |
+XLXI_18/XLXN_5                     | NONE(XLXI_18/XLXI_2/I_Q0/I_36_35)| 4     |
+-----------------------------------+----------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-----------------------------------+-------+
+Control Signal                     | Buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------+-------+
+XLXI_74/XLXN_9(XLXI_74/XLXI_7:G)   | NONE(XLXI_74/XLXI_3/I_Q15/I_36_35)| 48    |
+-----------------------------------+-----------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.389ns (Maximum Frequency: 135.335MHz)
+   Minimum input arrival time before clock: 1.731ns
+   Maximum output required time after clock: 14.678ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_292'
+  Clock period: 3.322ns (frequency: 301.042MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               3.322ns (Levels of Logic = 2)
+  Source:            XLXI_40/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_40/I_Q0/I_36_35 (FF)
+  Source Clock:      XLXN_292 rising
+  Destination Clock: XLXN_292 rising
+
+  Data Path: XLXI_40/I_Q0/I_36_35 to XLXI_40/I_Q0/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.514   0.602  I_36_35 (Q)
+     end scope: 'I_Q0'
+     begin scope: 'I_Q1'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     OR2:I1->O             1   0.612   0.357  I_36_73 (D_S)
+     FDRE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      3.322ns (2.006ns logic, 1.316ns route)
+                                       (60.4% logic, 39.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sync'
+  Clock period: 6.708ns (frequency: 149.071MHz)
+  Total number of paths / destination ports: 272 / 32
+-------------------------------------------------------------------------
+Delay:               6.708ns (Levels of Logic = 6)
+  Source:            XLXI_17/XLXI_37/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_17/XLXI_37/I_Q13/I_36_35 (FF)
+  Source Clock:      sync rising
+  Destination Clock: sync rising
+
+  Data Path: XLXI_17/XLXI_37/I_Q0/I_36_35 to XLXI_17/XLXI_37/I_Q13/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.538  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            5   0.612   0.538  I_36_10 (T4)
+     AND5:I4->O            5   0.612   0.538  I_36_14 (T8)
+     AND5:I4->O            5   0.612   0.538  I_36_29 (T12)
+     AND2:I1->O            1   0.612   0.357  I_36_23 (T13)
+     begin scope: 'I_Q13'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      6.708ns (3.842ns logic, 2.866ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_18/XLXN_2'
+  Clock period: 7.389ns (frequency: 135.335MHz)
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Delay:               7.389ns (Levels of Logic = 9)
+  Source:            XLXI_18/XLXI_5/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_18/XLXI_5/I_Q2/I_36_35 (FF)
+  Source Clock:      XLXI_18/XLXN_2 rising
+  Destination Clock: XLXI_18/XLXN_2 rising
+
+  Data Path: XLXI_18/XLXI_5/I_Q0/I_36_35 to XLXI_18/XLXI_5/I_Q2/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.793  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND2B2:I1->O          1   0.612   0.357  I_36_3 (T2_DN)
+     begin scope: 'I_T2'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_T2'
+     begin scope: 'I_Q2'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      7.389ns (4.454ns logic, 2.935ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_18/XLXN_3'
+  Clock period: 7.389ns (frequency: 135.335MHz)
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Delay:               7.389ns (Levels of Logic = 9)
+  Source:            XLXI_18/XLXI_4/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_18/XLXI_4/I_Q2/I_36_35 (FF)
+  Source Clock:      XLXI_18/XLXN_3 rising
+  Destination Clock: XLXI_18/XLXN_3 rising
+
+  Data Path: XLXI_18/XLXI_4/I_Q0/I_36_35 to XLXI_18/XLXI_4/I_Q2/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.793  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND2B2:I1->O          1   0.612   0.357  I_36_3 (T2_DN)
+     begin scope: 'I_T2'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_T2'
+     begin scope: 'I_Q2'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      7.389ns (4.454ns logic, 2.935ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_18/XLXN_4'
+  Clock period: 7.389ns (frequency: 135.335MHz)
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Delay:               7.389ns (Levels of Logic = 9)
+  Source:            XLXI_18/XLXI_3/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_18/XLXI_3/I_Q2/I_36_35 (FF)
+  Source Clock:      XLXI_18/XLXN_4 rising
+  Destination Clock: XLXI_18/XLXN_4 rising
+
+  Data Path: XLXI_18/XLXI_3/I_Q0/I_36_35 to XLXI_18/XLXI_3/I_Q2/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.793  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND2B2:I1->O          1   0.612   0.357  I_36_3 (T2_DN)
+     begin scope: 'I_T2'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_T2'
+     begin scope: 'I_Q2'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      7.389ns (4.454ns logic, 2.935ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_18/XLXN_5'
+  Clock period: 7.389ns (frequency: 135.335MHz)
+  Total number of paths / destination ports: 16 / 4
+-------------------------------------------------------------------------
+Delay:               7.389ns (Levels of Logic = 9)
+  Source:            XLXI_18/XLXI_2/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_18/XLXI_2/I_Q2/I_36_35 (FF)
+  Source Clock:      XLXI_18/XLXN_5 rising
+  Destination Clock: XLXI_18/XLXN_5 rising
+
+  Data Path: XLXI_18/XLXI_2/I_Q0/I_36_35 to XLXI_18/XLXI_2/I_Q2/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.793  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND2B2:I1->O          1   0.612   0.357  I_36_3 (T2_DN)
+     begin scope: 'I_T2'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_T2'
+     begin scope: 'I_Q2'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      7.389ns (4.454ns logic, 2.935ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sync'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.731ns (Levels of Logic = 1)
+  Source:            button1 (PAD)
+  Destination:       XLXI_58 (FF)
+  Destination Clock: sync rising
+
+  Data Path: button1 to XLXI_58
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  button1_IBUF (button1_IBUF)
+     FD:D                      0.268          XLXI_58
+    ----------------------------------------
+    Total                      1.731ns (1.374ns logic, 0.357ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_74/XLXI_3/I_Q15/Q'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.731ns (Levels of Logic = 1)
+  Source:            enkoderA (PAD)
+  Destination:       XLXI_74/XLXI_22 (FF)
+  Destination Clock: XLXI_74/XLXI_3/I_Q15/Q rising
+
+  Data Path: enkoderA to XLXI_74/XLXI_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  enkoderA_IBUF (enkoderA_IBUF)
+     FD:D                      0.268          XLXI_74/XLXI_22
+    ----------------------------------------
+    Total                      1.731ns (1.374ns logic, 0.357ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_74/XLXI_3/I_Q15/Q'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              8.152ns (Levels of Logic = 5)
+  Source:            XLXI_74/XLXI_22 (FF)
+  Destination:       led1 (PAD)
+  Source Clock:      XLXI_74/XLXI_3/I_Q15/Q rising
+
+  Data Path: XLXI_74/XLXI_22 to led1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.514   0.357  XLXI_74/XLXI_22 (XLXI_74/XLXN_24)
+     INV:I->O              1   0.612   0.357  XLXI_74/XLXI_23 (XLXI_74/XLXN_26)
+     INV:I->O              4   0.612   0.499  XLXI_74/XLXI_10 (XLXN_356)
+     AND2:I0->O            3   0.612   0.451  XLXI_39/XLXI_5 (XLXN_232)
+     AND2:I0->O            1   0.612   0.357  XLXI_21 (led1_OBUF)
+     OBUF:I->O                 3.169          led1_OBUF (led1)
+    ----------------------------------------
+    Total                      8.152ns (6.131ns logic, 2.021ns route)
+                                       (75.2% logic, 24.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_292'
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Offset:              7.286ns (Levels of Logic = 5)
+  Source:            XLXI_40/I_Q0/I_36_35 (FF)
+  Destination:       led1 (PAD)
+  Source Clock:      XLXN_292 rising
+
+  Data Path: XLXI_40/I_Q0/I_36_35 to led1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.514   0.602  I_36_35 (Q)
+     end scope: 'I_Q0'
+     end scope: 'XLXI_40'
+     AND2B2:I1->O          1   0.612   0.357  XLXI_39/XLXI_4 (XLXI_39/XLXN_20)
+     AND2:I1->O            3   0.612   0.451  XLXI_39/XLXI_5 (XLXN_232)
+     AND2:I0->O            1   0.612   0.357  XLXI_21 (led1_OBUF)
+     OBUF:I->O                 3.169          led1_OBUF (led1)
+    ----------------------------------------
+    Total                      7.286ns (5.519ns logic, 1.767ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_18/XLXN_2'
+  Total number of paths / destination ports: 254 / 8
+-------------------------------------------------------------------------
+Offset:              14.678ns (Levels of Logic = 14)
+  Source:            XLXI_18/XLXI_5/I_Q1/I_36_35 (FF)
+  Destination:       led2 (PAD)
+  Source Clock:      XLXI_18/XLXN_2 rising
+
+  Data Path: XLXI_18/XLXI_5/I_Q1/I_36_35 to led2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.514   0.697  I_36_35 (Q)
+     end scope: 'I_Q1'
+     end scope: 'XLXI_18/XLXI_5'
+     BUF:I->O              3   0.612   0.451  XLXI_18/XLXI_32 (mag<13>)
+     begin scope: 'XLXI_37'
+     XNOR2:I0->O           2   0.612   0.380  I_36_73 (EQ_13)
+     AND3B1:I1->O          1   0.612   0.357  I_36_69 (LE12_13)
+     OR2:I1->O             2   0.612   0.380  I_36_78 (LT12_13)
+     NOR2:I1->O            5   0.612   0.538  I_36_94 (EQ12_13)
+     AND4:I1->O            8   0.612   0.643  I_36_162 (EQ8_15)
+     AND2:I0->O            1   0.612   0.357  I_36_22 (LTD)
+     begin scope: 'I_36_124'
+     OR4:I0->O             1   0.612   0.357  I_36_95 (S1)
+     OR2:I1->O             1   0.612   0.357  I_36_94 (O)
+     end scope: 'I_36_124'
+     end scope: 'XLXI_37'
+     AND2B2:I0->O          1   0.612   0.357  XLXI_38 (led2_OBUF)
+     OBUF:I->O                 3.169          led2_OBUF (led2)
+    ----------------------------------------
+    Total                     14.678ns (9.803ns logic, 4.875ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_18/XLXN_3'
+  Total number of paths / destination ports: 206 / 8
+-------------------------------------------------------------------------
+Offset:              14.497ns (Levels of Logic = 14)
+  Source:            XLXI_18/XLXI_4/I_Q1/I_36_35 (FF)
+  Destination:       led2 (PAD)
+  Source Clock:      XLXI_18/XLXN_3 rising
+
+  Data Path: XLXI_18/XLXI_4/I_Q1/I_36_35 to led2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.514   0.697  I_36_35 (Q)
+     end scope: 'I_Q1'
+     end scope: 'XLXI_18/XLXI_4'
+     BUF:I->O              3   0.612   0.451  XLXI_18/XLXI_20 (mag<9>)
+     begin scope: 'XLXI_37'
+     XNOR2:I0->O           2   0.612   0.380  I_36_86 (EQ_9)
+     AND3B1:I1->O          1   0.612   0.357  I_36_89 (GE8_9)
+     OR2:I1->O             2   0.612   0.380  I_36_91 (GT8_9)
+     NOR2:I0->O            1   0.612   0.357  I_36_111 (EQ8_9)
+     AND4:I3->O            8   0.612   0.643  I_36_162 (EQ8_15)
+     AND2:I0->O            1   0.612   0.357  I_36_22 (LTD)
+     begin scope: 'I_36_124'
+     OR4:I0->O             1   0.612   0.357  I_36_95 (S1)
+     OR2:I1->O             1   0.612   0.357  I_36_94 (O)
+     end scope: 'I_36_124'
+     end scope: 'XLXI_37'
+     AND2B2:I0->O          1   0.612   0.357  XLXI_38 (led2_OBUF)
+     OBUF:I->O                 3.169          led2_OBUF (led2)
+    ----------------------------------------
+    Total                     14.497ns (9.803ns logic, 4.694ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_18/XLXN_4'
+  Total number of paths / destination ports: 158 / 8
+-------------------------------------------------------------------------
+Offset:              13.383ns (Levels of Logic = 13)
+  Source:            XLXI_18/XLXI_3/I_Q1/I_36_35 (FF)
+  Destination:       led2 (PAD)
+  Source Clock:      XLXI_18/XLXN_4 rising
+
+  Data Path: XLXI_18/XLXI_3/I_Q1/I_36_35 to led2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.514   0.697  I_36_35 (Q)
+     end scope: 'I_Q1'
+     end scope: 'XLXI_18/XLXI_3'
+     BUF:I->O              3   0.612   0.451  XLXI_18/XLXI_28 (mag<5>)
+     begin scope: 'XLXI_37'
+     XNOR2:I0->O           2   0.612   0.380  I_36_100 (EQ_5)
+     AND3B1:I1->O          1   0.612   0.357  I_36_101 (GE4_5)
+     OR2:I1->O             2   0.612   0.380  I_36_103 (GT4_5)
+     NOR2:I0->O            4   0.612   0.499  I_36_96 (EQ4_5)
+     AND4:I1->O            1   0.612   0.357  I_36_24 (GTB)
+     begin scope: 'I_36_125'
+     OR4:I2->O             1   0.612   0.357  I_36_112 (S0)
+     OR2:I0->O             1   0.612   0.357  I_36_94 (O)
+     end scope: 'I_36_125'
+     end scope: 'XLXI_37'
+     AND2B2:I1->O          1   0.612   0.357  XLXI_38 (led2_OBUF)
+     OBUF:I->O                 3.169          led2_OBUF (led2)
+    ----------------------------------------
+    Total                     13.383ns (9.191ns logic, 4.192ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_18/XLXN_5'
+  Total number of paths / destination ports: 110 / 8
+-------------------------------------------------------------------------
+Offset:              13.105ns (Levels of Logic = 13)
+  Source:            XLXI_18/XLXI_2/I_Q3/I_36_35 (FF)
+  Destination:       led2 (PAD)
+  Source Clock:      XLXI_18/XLXN_5 rising
+
+  Data Path: XLXI_18/XLXI_2/I_Q3/I_36_35 to led2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.538  I_36_35 (Q)
+     end scope: 'I_Q3'
+     end scope: 'XLXI_18/XLXI_2'
+     BUF:I->O              3   0.612   0.451  XLXI_18/XLXI_18 (mag<3>)
+     begin scope: 'XLXI_37'
+     XNOR2:I0->O           2   0.612   0.380  I_36_38 (EQ_3)
+     AND3B1:I1->O          1   0.612   0.357  I_36_40 (GE2_3)
+     OR2:I1->O             2   0.612   0.380  I_36_43 (GT2_3)
+     NOR2:I0->O            2   0.612   0.380  I_36_35 (EQ2_3)
+     AND5:I3->O            1   0.612   0.357  I_36_53 (LTA)
+     begin scope: 'I_36_124'
+     OR4:I3->O             1   0.612   0.357  I_36_95 (S1)
+     OR2:I1->O             1   0.612   0.357  I_36_94 (O)
+     end scope: 'I_36_124'
+     end scope: 'XLXI_37'
+     AND2B2:I0->O          1   0.612   0.357  XLXI_38 (led2_OBUF)
+     OBUF:I->O                 3.169          led2_OBUF (led2)
+    ----------------------------------------
+    Total                     13.105ns (9.191ns logic, 3.914ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sync'
+  Total number of paths / destination ports: 438 / 11
+-------------------------------------------------------------------------
+Offset:              9.491ns (Levels of Logic = 9)
+  Source:            XLXI_17/XLXI_37/I_Q14/I_36_35 (FF)
+  Destination:       a (PAD)
+  Source Clock:      sync rising
+
+  Data Path: XLXI_17/XLXI_37/I_Q14/I_36_35 to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            23   0.514   1.022  I_36_35 (Q)
+     end scope: 'I_Q14'
+     end scope: 'XLXI_17/XLXI_37'
+     begin scope: 'XLXI_17/XLXI_7'
+     begin scope: 'I_M01'
+     AND3:I2->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.000  I_36_38 (O)
+     end scope: 'I_M01'
+     MUXF5:I0->O          22   0.278   0.989  I_O (O)
+     end scope: 'XLXI_17/XLXI_7'
+     AND3B2:I0->O          1   0.612   0.357  XLXI_17/XLXI_1/XLXI_182 (XLXI_17/XLXI_1/XLXN_309)
+     OR3:I1->O             1   0.612   0.357  XLXI_17/XLXI_1/XLXI_180 (e_OBUF)
+     OBUF:I->O                 3.169          e_OBUF (e)
+    ----------------------------------------
+    Total                      9.491ns (6.409ns logic, 3.082ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.28 secs
+ 
+--> 
+
+Total memory usage is 219720 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

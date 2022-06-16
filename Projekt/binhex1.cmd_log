@@ -1,0 +1,15 @@
+sch2verilog -intstyle ise -family spartan3e -tionly   -tiext tfi -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.tfi
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/binhex1/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/binhex1.sch" binhex1.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/binhex1.sch" binhex1.vf

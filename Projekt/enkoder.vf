@@ -1,0 +1,294 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : enkoder.vf
+// /___/   /\     Timestamp : 06/14/2022 08:28:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3e -w D:/student/LLVI/Xilinx/library/enkoder.sch enkoder.vf
+//Design Name: enkoder
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FTCE_MXILINX_enkoder(C, 
+                            CE, 
+                            CLR, 
+                            T, 
+                            Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input T;
+   output Q;
+   
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   XOR2 I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   FDCE I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(TQ), 
+                 .Q(Q_DUMMY));
+   // synthesis attribute RLOC of I_36_35 is "X0Y0"
+   defparam I_36_35.INIT = 1'b0;
+endmodule
+`timescale 1ns / 1ps
+
+module CB16CE_MXILINX_enkoder(C, 
+                              CE, 
+                              CLR, 
+                              CEO, 
+                              Q, 
+                              TC);
+
+    input C;
+    input CE;
+    input CLR;
+   output CEO;
+   output [15:0] Q;
+   output TC;
+   
+   wire T2;
+   wire T3;
+   wire T4;
+   wire T5;
+   wire T6;
+   wire T7;
+   wire T8;
+   wire T9;
+   wire T10;
+   wire T11;
+   wire T12;
+   wire T13;
+   wire T14;
+   wire T15;
+   wire XLXN_1;
+   wire [15:0] Q_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q[15:0] = Q_DUMMY[15:0];
+   assign TC = TC_DUMMY;
+   FTCE_MXILINX_enkoder I_Q0 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(XLXN_1), 
+                              .Q(Q_DUMMY[0]));
+   // synthesis attribute HU_SET of I_Q0 is "I_Q0_1"
+   FTCE_MXILINX_enkoder I_Q1 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(Q_DUMMY[0]), 
+                              .Q(Q_DUMMY[1]));
+   // synthesis attribute HU_SET of I_Q1 is "I_Q1_0"
+   FTCE_MXILINX_enkoder I_Q2 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T2), 
+                              .Q(Q_DUMMY[2]));
+   // synthesis attribute HU_SET of I_Q2 is "I_Q2_3"
+   FTCE_MXILINX_enkoder I_Q3 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T3), 
+                              .Q(Q_DUMMY[3]));
+   // synthesis attribute HU_SET of I_Q3 is "I_Q3_2"
+   FTCE_MXILINX_enkoder I_Q4 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T4), 
+                              .Q(Q_DUMMY[4]));
+   // synthesis attribute HU_SET of I_Q4 is "I_Q4_7"
+   FTCE_MXILINX_enkoder I_Q5 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T5), 
+                              .Q(Q_DUMMY[5]));
+   // synthesis attribute HU_SET of I_Q5 is "I_Q5_6"
+   FTCE_MXILINX_enkoder I_Q6 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T6), 
+                              .Q(Q_DUMMY[6]));
+   // synthesis attribute HU_SET of I_Q6 is "I_Q6_5"
+   FTCE_MXILINX_enkoder I_Q7 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T7), 
+                              .Q(Q_DUMMY[7]));
+   // synthesis attribute HU_SET of I_Q7 is "I_Q7_4"
+   FTCE_MXILINX_enkoder I_Q8 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T8), 
+                              .Q(Q_DUMMY[8]));
+   // synthesis attribute HU_SET of I_Q8 is "I_Q8_8"
+   FTCE_MXILINX_enkoder I_Q9 (.C(C), 
+                              .CE(CE), 
+                              .CLR(CLR), 
+                              .T(T9), 
+                              .Q(Q_DUMMY[9]));
+   // synthesis attribute HU_SET of I_Q9 is "I_Q9_9"
+   FTCE_MXILINX_enkoder I_Q10 (.C(C), 
+                               .CE(CE), 
+                               .CLR(CLR), 
+                               .T(T10), 
+                               .Q(Q_DUMMY[10]));
+   // synthesis attribute HU_SET of I_Q10 is "I_Q10_10"
+   FTCE_MXILINX_enkoder I_Q11 (.C(C), 
+                               .CE(CE), 
+                               .CLR(CLR), 
+                               .T(T11), 
+                               .Q(Q_DUMMY[11]));
+   // synthesis attribute HU_SET of I_Q11 is "I_Q11_11"
+   FTCE_MXILINX_enkoder I_Q12 (.C(C), 
+                               .CE(CE), 
+                               .CLR(CLR), 
+                               .T(T12), 
+                               .Q(Q_DUMMY[12]));
+   // synthesis attribute HU_SET of I_Q12 is "I_Q12_12"
+   FTCE_MXILINX_enkoder I_Q13 (.C(C), 
+                               .CE(CE), 
+                               .CLR(CLR), 
+                               .T(T13), 
+                               .Q(Q_DUMMY[13]));
+   // synthesis attribute HU_SET of I_Q13 is "I_Q13_13"
+   FTCE_MXILINX_enkoder I_Q14 (.C(C), 
+                               .CE(CE), 
+                               .CLR(CLR), 
+                               .T(T14), 
+                               .Q(Q_DUMMY[14]));
+   // synthesis attribute HU_SET of I_Q14 is "I_Q14_14"
+   FTCE_MXILINX_enkoder I_Q15 (.C(C), 
+                               .CE(CE), 
+                               .CLR(CLR), 
+                               .T(T15), 
+                               .Q(Q_DUMMY[15]));
+   // synthesis attribute HU_SET of I_Q15 is "I_Q15_15"
+   AND3 I_36_3 (.I0(Q_DUMMY[2]), 
+                .I1(Q_DUMMY[1]), 
+                .I2(Q_DUMMY[0]), 
+                .O(T3));
+   AND2 I_36_4 (.I0(Q_DUMMY[1]), 
+                .I1(Q_DUMMY[0]), 
+                .O(T2));
+   VCC I_36_9 (.P(XLXN_1));
+   AND4 I_36_10 (.I0(Q_DUMMY[3]), 
+                 .I1(Q_DUMMY[2]), 
+                 .I2(Q_DUMMY[1]), 
+                 .I3(Q_DUMMY[0]), 
+                 .O(T4));
+   AND5 I_36_14 (.I0(Q_DUMMY[7]), 
+                 .I1(Q_DUMMY[6]), 
+                 .I2(Q_DUMMY[5]), 
+                 .I3(Q_DUMMY[4]), 
+                 .I4(T4), 
+                 .O(T8));
+   AND2 I_36_15 (.I0(Q_DUMMY[4]), 
+                 .I1(T4), 
+                 .O(T5));
+   AND3 I_36_19 (.I0(Q_DUMMY[5]), 
+                 .I1(Q_DUMMY[4]), 
+                 .I2(T4), 
+                 .O(T6));
+   AND4 I_36_21 (.I0(Q_DUMMY[6]), 
+                 .I1(Q_DUMMY[5]), 
+                 .I2(Q_DUMMY[4]), 
+                 .I3(T4), 
+                 .O(T7));
+   AND5 I_36_22 (.I0(Q_DUMMY[15]), 
+                 .I1(Q_DUMMY[14]), 
+                 .I2(Q_DUMMY[13]), 
+                 .I3(Q_DUMMY[12]), 
+                 .I4(T12), 
+                 .O(TC_DUMMY));
+   AND2 I_36_23 (.I0(Q_DUMMY[12]), 
+                 .I1(T12), 
+                 .O(T13));
+   AND3 I_36_24 (.I0(Q_DUMMY[13]), 
+                 .I1(Q_DUMMY[12]), 
+                 .I2(T12), 
+                 .O(T14));
+   AND4 I_36_25 (.I0(Q_DUMMY[14]), 
+                 .I1(Q_DUMMY[13]), 
+                 .I2(Q_DUMMY[12]), 
+                 .I3(T12), 
+                 .O(T15));
+   AND4 I_36_26 (.I0(Q_DUMMY[10]), 
+                 .I1(Q_DUMMY[9]), 
+                 .I2(Q_DUMMY[8]), 
+                 .I3(T8), 
+                 .O(T11));
+   AND3 I_36_27 (.I0(Q_DUMMY[9]), 
+                 .I1(Q_DUMMY[8]), 
+                 .I2(T8), 
+                 .O(T10));
+   AND2 I_36_28 (.I0(Q_DUMMY[8]), 
+                 .I1(T8), 
+                 .O(T9));
+   AND5 I_36_29 (.I0(Q_DUMMY[11]), 
+                 .I1(Q_DUMMY[10]), 
+                 .I2(Q_DUMMY[9]), 
+                 .I3(Q_DUMMY[8]), 
+                 .I4(T8), 
+                 .O(T12));
+   AND2 I_36_54 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+endmodule
+`timescale 1ns / 1ps
+
+module enkoder(A, 
+               B, 
+               sync, 
+               Dir, 
+               Q);
+
+    input A;
+    input B;
+    input sync;
+   output Dir;
+   output Q;
+   
+   wire [15:0] mag;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_24;
+   wire XLXN_26;
+   
+   FD XLXI_2 (.C(mag[15]), 
+              .D(B), 
+              .Q(Dir));
+   defparam XLXI_2.INIT = 1'b0;
+   CB16CE_MXILINX_enkoder XLXI_3 (.C(sync), 
+                                  .CE(XLXN_10), 
+                                  .CLR(XLXN_9), 
+                                  .CEO(), 
+                                  .Q(mag[15:0]), 
+                                  .TC());
+   // synthesis attribute HU_SET of XLXI_3 is "XLXI_3_16"
+   GND XLXI_7 (.G(XLXN_9));
+   VCC XLXI_8 (.P(XLXN_10));
+   INV XLXI_10 (.I(XLXN_26), 
+                .O(Q));
+   FD XLXI_22 (.C(mag[15]), 
+               .D(A), 
+               .Q(XLXN_24));
+   defparam XLXI_22.INIT = 1'b0;
+   INV XLXI_23 (.I(XLXN_24), 
+                .O(XLXN_26));
+endmodule

@@ -1,0 +1,48 @@
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e -tionly   -tiext tfi -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.tfi
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e -tionly   -tiext tfi -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.tfi
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy v1/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy - 1 button 2/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy - 1 button 2/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy - 1 button 2/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy - 1 button 2/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/display7segment.sch" display7segment.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/display7segment.sch" display7segment.vf

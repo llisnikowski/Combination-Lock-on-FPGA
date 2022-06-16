@@ -1,0 +1,469 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : cb4cled_x4.vf
+// /___/   /\     Timestamp : 06/07/2022 10:50:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3e -w D:/student/LLVI/Xilinx/library/cb4cled_x4.sch cb4cled_x4.vf
+//Design Name: cb4cled_x4
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1B1_MXILINX_cb4cled_x4(D0, 
+                                 D1, 
+                                 S0, 
+                                 O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B2 I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2 I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2 I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_cb4cled_x4(D0, 
+                               D1, 
+                               S0, 
+                               O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1 I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2 I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2 I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module FTCLEX_MXILINX_cb4cled_x4(C, 
+                                 CE, 
+                                 CLR, 
+                                 D, 
+                                 L, 
+                                 T, 
+                                 Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input D;
+    input L;
+    input T;
+   output Q;
+   
+   wire MD;
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   M2_1_MXILINX_cb4cled_x4 I_36_30 (.D0(TQ), 
+                                    .D1(D), 
+                                    .S0(L), 
+                                    .O(MD));
+   // synthesis attribute HU_SET of I_36_30 is "I_36_30_0"
+   XOR2 I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   FDCE I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(MD), 
+                 .Q(Q_DUMMY));
+   // synthesis attribute RLOC of I_36_35 is "X0Y0"
+   defparam I_36_35.INIT = 1'b0;
+endmodule
+`timescale 1ns / 1ps
+
+module CB4CLED_MXILINX_cb4cled_x4(C, 
+                                  CE, 
+                                  CLR, 
+                                  D0, 
+                                  D1, 
+                                  D2, 
+                                  D3, 
+                                  L, 
+                                  UP, 
+                                  CEO, 
+                                  Q0, 
+                                  Q1, 
+                                  Q2, 
+                                  Q3, 
+                                  TC);
+
+    input C;
+    input CE;
+    input CLR;
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input L;
+    input UP;
+   output CEO;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   output TC;
+   
+   wire OR_CE_L;
+   wire TC_DN;
+   wire TC_UP;
+   wire T1;
+   wire T2;
+   wire T2_DN;
+   wire T2_UP;
+   wire T3;
+   wire T3_DN;
+   wire T3_UP;
+   wire XLXN_1;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   assign TC = TC_DUMMY;
+   FTCLEX_MXILINX_cb4cled_x4 I_Q0 (.C(C), 
+                                   .CE(OR_CE_L), 
+                                   .CLR(CLR), 
+                                   .D(D0), 
+                                   .L(L), 
+                                   .T(XLXN_1), 
+                                   .Q(Q0_DUMMY));
+   // synthesis attribute HU_SET of I_Q0 is "I_Q0_4"
+   FTCLEX_MXILINX_cb4cled_x4 I_Q1 (.C(C), 
+                                   .CE(OR_CE_L), 
+                                   .CLR(CLR), 
+                                   .D(D1), 
+                                   .L(L), 
+                                   .T(T1), 
+                                   .Q(Q1_DUMMY));
+   // synthesis attribute HU_SET of I_Q1 is "I_Q1_3"
+   FTCLEX_MXILINX_cb4cled_x4 I_Q2 (.C(C), 
+                                   .CE(OR_CE_L), 
+                                   .CLR(CLR), 
+                                   .D(D2), 
+                                   .L(L), 
+                                   .T(T2), 
+                                   .Q(Q2_DUMMY));
+   // synthesis attribute HU_SET of I_Q2 is "I_Q2_2"
+   FTCLEX_MXILINX_cb4cled_x4 I_Q3 (.C(C), 
+                                   .CE(OR_CE_L), 
+                                   .CLR(CLR), 
+                                   .D(D3), 
+                                   .L(L), 
+                                   .T(T3), 
+                                   .Q(Q3_DUMMY));
+   // synthesis attribute HU_SET of I_Q3 is "I_Q3_1"
+   M2_1_MXILINX_cb4cled_x4 I_TC (.D0(TC_DN), 
+                                 .D1(TC_UP), 
+                                 .S0(UP), 
+                                 .O(TC_DUMMY));
+   // synthesis attribute HU_SET of I_TC is "I_TC_7"
+   M2_1B1_MXILINX_cb4cled_x4 I_T1 (.D0(Q0_DUMMY), 
+                                   .D1(Q0_DUMMY), 
+                                   .S0(UP), 
+                                   .O(T1));
+   // synthesis attribute HU_SET of I_T1 is "I_T1_8"
+   M2_1_MXILINX_cb4cled_x4 I_T2 (.D0(T2_DN), 
+                                 .D1(T2_UP), 
+                                 .S0(UP), 
+                                 .O(T2));
+   // synthesis attribute HU_SET of I_T2 is "I_T2_5"
+   M2_1_MXILINX_cb4cled_x4 I_T3 (.D0(T3_DN), 
+                                 .D1(T3_UP), 
+                                 .S0(UP), 
+                                 .O(T3));
+   // synthesis attribute HU_SET of I_T3 is "I_T3_6"
+   VCC I_36_1 (.P(XLXN_1));
+   AND2B2 I_36_3 (.I0(Q1_DUMMY), 
+                  .I1(Q0_DUMMY), 
+                  .O(T2_DN));
+   AND4 I_36_10 (.I0(Q3_DUMMY), 
+                 .I1(Q2_DUMMY), 
+                 .I2(Q1_DUMMY), 
+                 .I3(Q0_DUMMY), 
+                 .O(TC_UP));
+   AND4B4 I_36_11 (.I0(Q3_DUMMY), 
+                   .I1(Q2_DUMMY), 
+                   .I2(Q1_DUMMY), 
+                   .I3(Q0_DUMMY), 
+                   .O(TC_DN));
+   AND3 I_36_15 (.I0(Q2_DUMMY), 
+                 .I1(Q1_DUMMY), 
+                 .I2(Q0_DUMMY), 
+                 .O(T3_UP));
+   AND3B3 I_36_16 (.I0(Q2_DUMMY), 
+                   .I1(Q1_DUMMY), 
+                   .I2(Q0_DUMMY), 
+                   .O(T3_DN));
+   AND2 I_36_37 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(T2_UP));
+   AND2 I_36_50 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+   OR2 I_36_60 (.I0(CE), 
+                .I1(L), 
+                .O(OR_CE_L));
+endmodule
+`timescale 1ns / 1ps
+
+module cb4cled_x4(CE, 
+                  CLR, 
+                  C0_c, 
+                  C0_up, 
+                  C1_c, 
+                  C1_up, 
+                  C2_c, 
+                  C2_up, 
+                  C3_c, 
+                  C3_up, 
+                  D0, 
+                  D1, 
+                  D2, 
+                  D3, 
+                  L, 
+                  sync, 
+                  C0_Q0, 
+                  C0_Q1, 
+                  C0_Q2, 
+                  C0_Q3, 
+                  C1_Q0, 
+                  C1_Q1, 
+                  C1_Q2, 
+                  C1_Q3, 
+                  C2_Q0, 
+                  C2_Q1, 
+                  C2_Q2, 
+                  C2_Q3, 
+                  C3_Q0, 
+                  C3_Q1, 
+                  C3_Q2, 
+                  C3_Q3, 
+                  mag);
+
+    input CE;
+    input CLR;
+    input C0_c;
+    input C0_up;
+    input C1_c;
+    input C1_up;
+    input C2_c;
+    input C2_up;
+    input C3_c;
+    input C3_up;
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input L;
+    input sync;
+   output C0_Q0;
+   output C0_Q1;
+   output C0_Q2;
+   output C0_Q3;
+   output C1_Q0;
+   output C1_Q1;
+   output C1_Q2;
+   output C1_Q3;
+   output C2_Q0;
+   output C2_Q1;
+   output C2_Q2;
+   output C2_Q3;
+   output C3_Q0;
+   output C3_Q1;
+   output C3_Q2;
+   output C3_Q3;
+   output [15:0] mag;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire C1_Q0_DUMMY;
+   wire C1_Q1_DUMMY;
+   wire C1_Q2_DUMMY;
+   wire C1_Q3_DUMMY;
+   wire C2_Q0_DUMMY;
+   wire C2_Q1_DUMMY;
+   wire C2_Q2_DUMMY;
+   wire C2_Q3_DUMMY;
+   wire C3_Q0_DUMMY;
+   wire C3_Q1_DUMMY;
+   wire C3_Q2_DUMMY;
+   wire C3_Q3_DUMMY;
+   wire C0_Q0_DUMMY;
+   wire C0_Q1_DUMMY;
+   wire C0_Q2_DUMMY;
+   wire C0_Q3_DUMMY;
+   
+   assign C0_Q0 = C0_Q0_DUMMY;
+   assign C0_Q1 = C0_Q1_DUMMY;
+   assign C0_Q2 = C0_Q2_DUMMY;
+   assign C0_Q3 = C0_Q3_DUMMY;
+   assign C1_Q0 = C1_Q0_DUMMY;
+   assign C1_Q1 = C1_Q1_DUMMY;
+   assign C1_Q2 = C1_Q2_DUMMY;
+   assign C1_Q3 = C1_Q3_DUMMY;
+   assign C2_Q0 = C2_Q0_DUMMY;
+   assign C2_Q1 = C2_Q1_DUMMY;
+   assign C2_Q2 = C2_Q2_DUMMY;
+   assign C2_Q3 = C2_Q3_DUMMY;
+   assign C3_Q0 = C3_Q0_DUMMY;
+   assign C3_Q1 = C3_Q1_DUMMY;
+   assign C3_Q2 = C3_Q2_DUMMY;
+   assign C3_Q3 = C3_Q3_DUMMY;
+   CB4CLED_MXILINX_cb4cled_x4 XLXI_2 (.C(XLXN_5), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .D0(D0), 
+                                      .D1(D1), 
+                                      .D2(D2), 
+                                      .D3(D3), 
+                                      .L(L), 
+                                      .UP(C0_up), 
+                                      .CEO(), 
+                                      .Q0(C0_Q0_DUMMY), 
+                                      .Q1(C0_Q1_DUMMY), 
+                                      .Q2(C0_Q2_DUMMY), 
+                                      .Q3(C0_Q3_DUMMY), 
+                                      .TC());
+   // synthesis attribute HU_SET of XLXI_2 is "XLXI_2_9"
+   CB4CLED_MXILINX_cb4cled_x4 XLXI_3 (.C(XLXN_4), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .D0(D0), 
+                                      .D1(D1), 
+                                      .D2(D2), 
+                                      .D3(D3), 
+                                      .L(L), 
+                                      .UP(C1_up), 
+                                      .CEO(), 
+                                      .Q0(C1_Q0_DUMMY), 
+                                      .Q1(C1_Q1_DUMMY), 
+                                      .Q2(C1_Q2_DUMMY), 
+                                      .Q3(C1_Q3_DUMMY), 
+                                      .TC());
+   // synthesis attribute HU_SET of XLXI_3 is "XLXI_3_10"
+   CB4CLED_MXILINX_cb4cled_x4 XLXI_4 (.C(XLXN_3), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .D0(D0), 
+                                      .D1(D1), 
+                                      .D2(D2), 
+                                      .D3(D3), 
+                                      .L(L), 
+                                      .UP(C2_up), 
+                                      .CEO(), 
+                                      .Q0(C2_Q0_DUMMY), 
+                                      .Q1(C2_Q1_DUMMY), 
+                                      .Q2(C2_Q2_DUMMY), 
+                                      .Q3(C2_Q3_DUMMY), 
+                                      .TC());
+   // synthesis attribute HU_SET of XLXI_4 is "XLXI_4_11"
+   CB4CLED_MXILINX_cb4cled_x4 XLXI_5 (.C(XLXN_2), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .D0(D0), 
+                                      .D1(D1), 
+                                      .D2(D2), 
+                                      .D3(D3), 
+                                      .L(L), 
+                                      .UP(C3_up), 
+                                      .CEO(), 
+                                      .Q0(C3_Q0_DUMMY), 
+                                      .Q1(C3_Q1_DUMMY), 
+                                      .Q2(C3_Q2_DUMMY), 
+                                      .Q3(C3_Q3_DUMMY), 
+                                      .TC());
+   // synthesis attribute HU_SET of XLXI_5 is "XLXI_5_12"
+   FD XLXI_6 (.C(sync), 
+              .D(C0_c), 
+              .Q(XLXN_5));
+   defparam XLXI_6.INIT = 1'b0;
+   FD XLXI_7 (.C(sync), 
+              .D(C1_c), 
+              .Q(XLXN_4));
+   defparam XLXI_7.INIT = 1'b0;
+   FD XLXI_8 (.C(sync), 
+              .D(C2_c), 
+              .Q(XLXN_3));
+   defparam XLXI_8.INIT = 1'b0;
+   FD XLXI_9 (.C(sync), 
+              .D(C3_c), 
+              .Q(XLXN_2));
+   defparam XLXI_9.INIT = 1'b0;
+   BUF XLXI_15 (.I(C0_Q0_DUMMY), 
+                .O(mag[0]));
+   BUF XLXI_16 (.I(C0_Q1_DUMMY), 
+                .O(mag[1]));
+   BUF XLXI_17 (.I(C0_Q2_DUMMY), 
+                .O(mag[2]));
+   BUF XLXI_18 (.I(C0_Q3_DUMMY), 
+                .O(mag[3]));
+   BUF XLXI_19 (.I(C2_Q0_DUMMY), 
+                .O(mag[8]));
+   BUF XLXI_20 (.I(C2_Q1_DUMMY), 
+                .O(mag[9]));
+   BUF XLXI_21 (.I(C2_Q2_DUMMY), 
+                .O(mag[10]));
+   BUF XLXI_22 (.I(C2_Q3_DUMMY), 
+                .O(mag[11]));
+   BUF XLXI_27 (.I(C1_Q0_DUMMY), 
+                .O(mag[4]));
+   BUF XLXI_28 (.I(C1_Q1_DUMMY), 
+                .O(mag[5]));
+   BUF XLXI_29 (.I(C1_Q2_DUMMY), 
+                .O(mag[6]));
+   BUF XLXI_30 (.I(C1_Q3_DUMMY), 
+                .O(mag[7]));
+   BUF XLXI_31 (.I(C3_Q0_DUMMY), 
+                .O(mag[12]));
+   BUF XLXI_32 (.I(C3_Q1_DUMMY), 
+                .O(mag[13]));
+   BUF XLXI_33 (.I(C3_Q2_DUMMY), 
+                .O(mag[14]));
+   BUF XLXI_34 (.I(C3_Q3_DUMMY), 
+                .O(mag[15]));
+endmodule

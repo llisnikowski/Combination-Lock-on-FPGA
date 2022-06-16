@@ -1,0 +1,537 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : display7segment.vf
+// /___/   /\     Timestamp : 06/07/2022 10:50:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3e -w D:/student/LLVI/Xilinx/library/display7segment.sch display7segment.vf
+//Design Name: display7segment
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module INV4_MXILINX_display7segment(I0, 
+                                    I1, 
+                                    I2, 
+                                    I3, 
+                                    O0, 
+                                    O1, 
+                                    O2, 
+                                    O3);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   
+   
+   INV I_36_37 (.I(I3), 
+                .O(O3));
+   INV I_36_38 (.I(I2), 
+                .O(O2));
+   INV I_36_39 (.I(I1), 
+                .O(O1));
+   INV I_36_40 (.I(I0), 
+                .O(O0));
+endmodule
+`timescale 1ns / 1ps
+
+module D2_4E_MXILINX_display7segment(A0, 
+                                     A1, 
+                                     E, 
+                                     D0, 
+                                     D1, 
+                                     D2, 
+                                     D3);
+
+    input A0;
+    input A1;
+    input E;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   
+   
+   AND3 I_36_30 (.I0(A1), 
+                 .I1(A0), 
+                 .I2(E), 
+                 .O(D3));
+   AND3B1 I_36_31 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(E), 
+                   .O(D2));
+   AND3B1 I_36_32 (.I0(A1), 
+                   .I1(A0), 
+                   .I2(E), 
+                   .O(D1));
+   AND3B2 I_36_33 (.I0(A0), 
+                   .I1(A1), 
+                   .I2(E), 
+                   .O(D0));
+endmodule
+`timescale 1ns / 1ps
+
+module FTCE_MXILINX_display7segment(C, 
+                                    CE, 
+                                    CLR, 
+                                    T, 
+                                    Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input T;
+   output Q;
+   
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   XOR2 I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   FDCE I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(TQ), 
+                 .Q(Q_DUMMY));
+   // synthesis attribute RLOC of I_36_35 is "X0Y0"
+   defparam I_36_35.INIT = 1'b0;
+endmodule
+`timescale 1ns / 1ps
+
+module CB16CE_MXILINX_display7segment(C, 
+                                      CE, 
+                                      CLR, 
+                                      CEO, 
+                                      Q, 
+                                      TC);
+
+    input C;
+    input CE;
+    input CLR;
+   output CEO;
+   output [15:0] Q;
+   output TC;
+   
+   wire T2;
+   wire T3;
+   wire T4;
+   wire T5;
+   wire T6;
+   wire T7;
+   wire T8;
+   wire T9;
+   wire T10;
+   wire T11;
+   wire T12;
+   wire T13;
+   wire T14;
+   wire T15;
+   wire XLXN_1;
+   wire [15:0] Q_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q[15:0] = Q_DUMMY[15:0];
+   assign TC = TC_DUMMY;
+   FTCE_MXILINX_display7segment I_Q0 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(XLXN_1), 
+                                      .Q(Q_DUMMY[0]));
+   // synthesis attribute HU_SET of I_Q0 is "I_Q0_1"
+   FTCE_MXILINX_display7segment I_Q1 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(Q_DUMMY[0]), 
+                                      .Q(Q_DUMMY[1]));
+   // synthesis attribute HU_SET of I_Q1 is "I_Q1_0"
+   FTCE_MXILINX_display7segment I_Q2 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T2), 
+                                      .Q(Q_DUMMY[2]));
+   // synthesis attribute HU_SET of I_Q2 is "I_Q2_3"
+   FTCE_MXILINX_display7segment I_Q3 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T3), 
+                                      .Q(Q_DUMMY[3]));
+   // synthesis attribute HU_SET of I_Q3 is "I_Q3_2"
+   FTCE_MXILINX_display7segment I_Q4 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T4), 
+                                      .Q(Q_DUMMY[4]));
+   // synthesis attribute HU_SET of I_Q4 is "I_Q4_7"
+   FTCE_MXILINX_display7segment I_Q5 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T5), 
+                                      .Q(Q_DUMMY[5]));
+   // synthesis attribute HU_SET of I_Q5 is "I_Q5_6"
+   FTCE_MXILINX_display7segment I_Q6 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T6), 
+                                      .Q(Q_DUMMY[6]));
+   // synthesis attribute HU_SET of I_Q6 is "I_Q6_5"
+   FTCE_MXILINX_display7segment I_Q7 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T7), 
+                                      .Q(Q_DUMMY[7]));
+   // synthesis attribute HU_SET of I_Q7 is "I_Q7_4"
+   FTCE_MXILINX_display7segment I_Q8 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T8), 
+                                      .Q(Q_DUMMY[8]));
+   // synthesis attribute HU_SET of I_Q8 is "I_Q8_8"
+   FTCE_MXILINX_display7segment I_Q9 (.C(C), 
+                                      .CE(CE), 
+                                      .CLR(CLR), 
+                                      .T(T9), 
+                                      .Q(Q_DUMMY[9]));
+   // synthesis attribute HU_SET of I_Q9 is "I_Q9_9"
+   FTCE_MXILINX_display7segment I_Q10 (.C(C), 
+                                       .CE(CE), 
+                                       .CLR(CLR), 
+                                       .T(T10), 
+                                       .Q(Q_DUMMY[10]));
+   // synthesis attribute HU_SET of I_Q10 is "I_Q10_10"
+   FTCE_MXILINX_display7segment I_Q11 (.C(C), 
+                                       .CE(CE), 
+                                       .CLR(CLR), 
+                                       .T(T11), 
+                                       .Q(Q_DUMMY[11]));
+   // synthesis attribute HU_SET of I_Q11 is "I_Q11_11"
+   FTCE_MXILINX_display7segment I_Q12 (.C(C), 
+                                       .CE(CE), 
+                                       .CLR(CLR), 
+                                       .T(T12), 
+                                       .Q(Q_DUMMY[12]));
+   // synthesis attribute HU_SET of I_Q12 is "I_Q12_12"
+   FTCE_MXILINX_display7segment I_Q13 (.C(C), 
+                                       .CE(CE), 
+                                       .CLR(CLR), 
+                                       .T(T13), 
+                                       .Q(Q_DUMMY[13]));
+   // synthesis attribute HU_SET of I_Q13 is "I_Q13_13"
+   FTCE_MXILINX_display7segment I_Q14 (.C(C), 
+                                       .CE(CE), 
+                                       .CLR(CLR), 
+                                       .T(T14), 
+                                       .Q(Q_DUMMY[14]));
+   // synthesis attribute HU_SET of I_Q14 is "I_Q14_14"
+   FTCE_MXILINX_display7segment I_Q15 (.C(C), 
+                                       .CE(CE), 
+                                       .CLR(CLR), 
+                                       .T(T15), 
+                                       .Q(Q_DUMMY[15]));
+   // synthesis attribute HU_SET of I_Q15 is "I_Q15_15"
+   AND3 I_36_3 (.I0(Q_DUMMY[2]), 
+                .I1(Q_DUMMY[1]), 
+                .I2(Q_DUMMY[0]), 
+                .O(T3));
+   AND2 I_36_4 (.I0(Q_DUMMY[1]), 
+                .I1(Q_DUMMY[0]), 
+                .O(T2));
+   VCC I_36_9 (.P(XLXN_1));
+   AND4 I_36_10 (.I0(Q_DUMMY[3]), 
+                 .I1(Q_DUMMY[2]), 
+                 .I2(Q_DUMMY[1]), 
+                 .I3(Q_DUMMY[0]), 
+                 .O(T4));
+   AND5 I_36_14 (.I0(Q_DUMMY[7]), 
+                 .I1(Q_DUMMY[6]), 
+                 .I2(Q_DUMMY[5]), 
+                 .I3(Q_DUMMY[4]), 
+                 .I4(T4), 
+                 .O(T8));
+   AND2 I_36_15 (.I0(Q_DUMMY[4]), 
+                 .I1(T4), 
+                 .O(T5));
+   AND3 I_36_19 (.I0(Q_DUMMY[5]), 
+                 .I1(Q_DUMMY[4]), 
+                 .I2(T4), 
+                 .O(T6));
+   AND4 I_36_21 (.I0(Q_DUMMY[6]), 
+                 .I1(Q_DUMMY[5]), 
+                 .I2(Q_DUMMY[4]), 
+                 .I3(T4), 
+                 .O(T7));
+   AND5 I_36_22 (.I0(Q_DUMMY[15]), 
+                 .I1(Q_DUMMY[14]), 
+                 .I2(Q_DUMMY[13]), 
+                 .I3(Q_DUMMY[12]), 
+                 .I4(T12), 
+                 .O(TC_DUMMY));
+   AND2 I_36_23 (.I0(Q_DUMMY[12]), 
+                 .I1(T12), 
+                 .O(T13));
+   AND3 I_36_24 (.I0(Q_DUMMY[13]), 
+                 .I1(Q_DUMMY[12]), 
+                 .I2(T12), 
+                 .O(T14));
+   AND4 I_36_25 (.I0(Q_DUMMY[14]), 
+                 .I1(Q_DUMMY[13]), 
+                 .I2(Q_DUMMY[12]), 
+                 .I3(T12), 
+                 .O(T15));
+   AND4 I_36_26 (.I0(Q_DUMMY[10]), 
+                 .I1(Q_DUMMY[9]), 
+                 .I2(Q_DUMMY[8]), 
+                 .I3(T8), 
+                 .O(T11));
+   AND3 I_36_27 (.I0(Q_DUMMY[9]), 
+                 .I1(Q_DUMMY[8]), 
+                 .I2(T8), 
+                 .O(T10));
+   AND2 I_36_28 (.I0(Q_DUMMY[8]), 
+                 .I1(T8), 
+                 .O(T9));
+   AND5 I_36_29 (.I0(Q_DUMMY[11]), 
+                 .I1(Q_DUMMY[10]), 
+                 .I2(Q_DUMMY[9]), 
+                 .I3(Q_DUMMY[8]), 
+                 .I4(T8), 
+                 .O(T12));
+   AND2 I_36_54 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_display7segment(D0, 
+                                     D1, 
+                                     E, 
+                                     S0, 
+                                     O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3 I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1 I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2 I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_display7segment(D0, 
+                                     D1, 
+                                     D2, 
+                                     D3, 
+                                     E, 
+                                     S0, 
+                                     S1, 
+                                     O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   M2_1E_MXILINX_display7segment I_M01 (.D0(D0), 
+                                        .D1(D1), 
+                                        .E(E), 
+                                        .S0(S0), 
+                                        .O(M01));
+   // synthesis attribute HU_SET of I_M01 is "I_M01_17"
+   M2_1E_MXILINX_display7segment I_M23 (.D0(D2), 
+                                        .D1(D3), 
+                                        .E(E), 
+                                        .S0(S0), 
+                                        .O(M23));
+   // synthesis attribute HU_SET of I_M23 is "I_M23_16"
+   MUXF5 I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module display7segment(l1b0, 
+                       l1b1, 
+                       l1b2, 
+                       l1b3, 
+                       l2b0, 
+                       l2b1, 
+                       l2b2, 
+                       l2b3, 
+                       l3b0, 
+                       l3b1, 
+                       l3b2, 
+                       l3b3, 
+                       l4b0, 
+                       l4b1, 
+                       l4b2, 
+                       l4b3, 
+                       sync, 
+                       a, 
+                       b, 
+                       c, 
+                       d, 
+                       e, 
+                       f, 
+                       g, 
+                       t1, 
+                       t2, 
+                       t3, 
+                       t4);
+
+    input l1b0;
+    input l1b1;
+    input l1b2;
+    input l1b3;
+    input l2b0;
+    input l2b1;
+    input l2b2;
+    input l2b3;
+    input l3b0;
+    input l3b1;
+    input l3b2;
+    input l3b3;
+    input l4b0;
+    input l4b1;
+    input l4b2;
+    input l4b3;
+    input sync;
+   output a;
+   output b;
+   output c;
+   output d;
+   output e;
+   output f;
+   output g;
+   output t1;
+   output t2;
+   output t3;
+   output t4;
+   
+   wire [15:0] mag;
+   wire XLXN_20;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_94;
+   wire XLXN_95;
+   wire XLXN_139;
+   wire XLXN_163;
+   wire XLXN_164;
+   wire XLXN_165;
+   wire XLXN_166;
+   
+   binhex1 XLXI_1 (.x0(XLXN_51), 
+                   .x1(XLXN_52), 
+                   .x2(XLXN_53), 
+                   .x3(XLXN_54), 
+                   .a(a), 
+                   .b(b), 
+                   .c(c), 
+                   .d(d), 
+                   .e(e), 
+                   .f(f), 
+                   .g(g));
+   M4_1E_MXILINX_display7segment XLXI_2 (.D0(l1b0), 
+                                         .D1(l2b0), 
+                                         .D2(l3b0), 
+                                         .D3(l4b0), 
+                                         .E(XLXN_20), 
+                                         .S0(mag[14]), 
+                                         .S1(mag[15]), 
+                                         .O(XLXN_51));
+   // synthesis attribute HU_SET of XLXI_2 is "XLXI_2_21"
+   M4_1E_MXILINX_display7segment XLXI_6 (.D0(l1b1), 
+                                         .D1(l2b1), 
+                                         .D2(l3b1), 
+                                         .D3(l4b1), 
+                                         .E(XLXN_20), 
+                                         .S0(mag[14]), 
+                                         .S1(mag[15]), 
+                                         .O(XLXN_52));
+   // synthesis attribute HU_SET of XLXI_6 is "XLXI_6_20"
+   M4_1E_MXILINX_display7segment XLXI_7 (.D0(l1b2), 
+                                         .D1(l2b2), 
+                                         .D2(l3b2), 
+                                         .D3(l4b2), 
+                                         .E(XLXN_20), 
+                                         .S0(mag[14]), 
+                                         .S1(mag[15]), 
+                                         .O(XLXN_53));
+   // synthesis attribute HU_SET of XLXI_7 is "XLXI_7_18"
+   M4_1E_MXILINX_display7segment XLXI_8 (.D0(l1b3), 
+                                         .D1(l2b3), 
+                                         .D2(l3b3), 
+                                         .D3(l4b3), 
+                                         .E(XLXN_20), 
+                                         .S0(mag[14]), 
+                                         .S1(mag[15]), 
+                                         .O(XLXN_54));
+   // synthesis attribute HU_SET of XLXI_8 is "XLXI_8_19"
+   VCC XLXI_9 (.P(XLXN_20));
+   VCC XLXI_17 (.P(XLXN_95));
+   GND XLXI_18 (.G(XLXN_94));
+   CB16CE_MXILINX_display7segment XLXI_37 (.C(sync), 
+                                           .CE(XLXN_95), 
+                                           .CLR(XLXN_94), 
+                                           .CEO(), 
+                                           .Q(mag[15:0]), 
+                                           .TC());
+   // synthesis attribute HU_SET of XLXI_37 is "XLXI_37_22"
+   D2_4E_MXILINX_display7segment XLXI_55 (.A0(mag[14]), 
+                                          .A1(mag[15]), 
+                                          .E(XLXN_139), 
+                                          .D0(XLXN_163), 
+                                          .D1(XLXN_164), 
+                                          .D2(XLXN_165), 
+                                          .D3(XLXN_166));
+   // synthesis attribute HU_SET of XLXI_55 is "XLXI_55_23"
+   VCC XLXI_56 (.P(XLXN_139));
+   INV4_MXILINX_display7segment XLXI_64 (.I0(XLXN_166), 
+                                         .I1(XLXN_165), 
+                                         .I2(XLXN_164), 
+                                         .I3(XLXN_163), 
+                                         .O0(t4), 
+                                         .O1(t3), 
+                                         .O2(t2), 
+                                         .O3(t1));
+   // synthesis attribute HU_SET of XLXI_64 is "XLXI_64_24"
+endmodule

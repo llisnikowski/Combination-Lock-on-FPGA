@@ -1,0 +1,11 @@
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt_ZamekSzyfrowy/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/demux4.sch" demux4.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/demux4.sch" demux4.vf

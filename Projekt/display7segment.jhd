@@ -1,0 +1,3 @@
+MODULE display7segment
+	SUBMODULE binhex1
+		INSTANCE XLXI_1

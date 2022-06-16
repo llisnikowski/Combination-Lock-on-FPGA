@@ -1,0 +1,10 @@
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/enkoder.sch" enkoder.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/library/enkoder.sch" enkoder.vf

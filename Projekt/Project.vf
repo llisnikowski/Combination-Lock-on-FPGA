@@ -1,0 +1,725 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : sch2verilog
+//  /   /         Filename : Project.vf
+// /___/   /\     Timestamp : 06/14/2022 08:34:48
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family spartan3e -w D:/student/LLVI/Xilinx/Projekt/Project.sch Project.vf
+//Design Name: Project
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FTRSE_MXILINX_Project(C, 
+                             CE, 
+                             R, 
+                             S, 
+                             T, 
+                             Q);
+
+    input C;
+    input CE;
+    input R;
+    input S;
+    input T;
+   output Q;
+   
+   wire CE_S;
+   wire D_S;
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   XOR2 I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   FDRE I_36_35 (.C(C), 
+                 .CE(CE_S), 
+                 .D(D_S), 
+                 .R(R), 
+                 .Q(Q_DUMMY));
+   // synthesis attribute RLOC of I_36_35 is "X0Y0"
+   defparam I_36_35.INIT = 1'b0;
+   OR2 I_36_73 (.I0(S), 
+                .I1(TQ), 
+                .O(D_S));
+   OR2 I_36_77 (.I0(CE), 
+                .I1(S), 
+                .O(CE_S));
+endmodule
+`timescale 1ns / 1ps
+
+module CB2RE_MXILINX_Project(C, 
+                             CE, 
+                             R, 
+                             CEO, 
+                             Q0, 
+                             Q1, 
+                             TC);
+
+    input C;
+    input CE;
+    input R;
+   output CEO;
+   output Q0;
+   output Q1;
+   output TC;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign TC = TC_DUMMY;
+   FTRSE_MXILINX_Project I_Q0 (.C(C), 
+                               .CE(CE), 
+                               .R(R), 
+                               .S(XLXN_2), 
+                               .T(XLXN_1), 
+                               .Q(Q0_DUMMY));
+   // synthesis attribute HU_SET of I_Q0 is "I_Q0_0"
+   FTRSE_MXILINX_Project I_Q1 (.C(C), 
+                               .CE(CE), 
+                               .R(R), 
+                               .S(XLXN_2), 
+                               .T(Q0_DUMMY), 
+                               .Q(Q1_DUMMY));
+   // synthesis attribute HU_SET of I_Q1 is "I_Q1_1"
+   AND2 I_36_37 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(TC_DUMMY));
+   VCC I_36_47 (.P(XLXN_1));
+   GND I_36_54 (.G(XLXN_2));
+   AND2 I_36_55 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+endmodule
+`timescale 1ns / 1ps
+
+module OR8_MXILINX_Project(I0, 
+                           I1, 
+                           I2, 
+                           I3, 
+                           I4, 
+                           I5, 
+                           I6, 
+                           I7, 
+                           O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   FMAP I_36_91 (.I1(S0), 
+                 .I2(S1), 
+                 .I3(dummy), 
+                 .I4(dummy), 
+                 .O(O_DUMMY));
+   // synthesis attribute RLOC of I_36_91 is "X0Y1"
+   OR2 I_36_94 (.I0(S0), 
+                .I1(S1), 
+                .O(O_DUMMY));
+   OR4 I_36_95 (.I0(I4), 
+                .I1(I5), 
+                .I2(I6), 
+                .I3(I7), 
+                .O(S1));
+   OR4 I_36_112 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I3), 
+                 .O(S0));
+   FMAP I_36_116 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I3), 
+                  .O(S0));
+   // synthesis attribute RLOC of I_36_116 is "X0Y0"
+   FMAP I_36_117 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+   // synthesis attribute RLOC of I_36_117 is "X0Y0"
+endmodule
+`timescale 1ns / 1ps
+
+module COMPM16_MXILINX_Project(A, 
+                               B, 
+                               GT, 
+                               LT);
+
+    input [15:0] A;
+    input [15:0] B;
+   output GT;
+   output LT;
+   
+   wire EQ_1;
+   wire EQ_3;
+   wire EQ_5;
+   wire EQ_7;
+   wire EQ_9;
+   wire EQ_11;
+   wire EQ_13;
+   wire EQ_15;
+   wire EQ2_3;
+   wire EQ4_5;
+   wire EQ6_7;
+   wire EQ8_9;
+   wire EQ8_15;
+   wire EQ10_11;
+   wire EQ12_13;
+   wire EQ14_15;
+   wire GE0_1;
+   wire GE2_3;
+   wire GE4_5;
+   wire GE6_7;
+   wire GE8_9;
+   wire GE10_11;
+   wire GE12_13;
+   wire GE14_15;
+   wire GTA;
+   wire GTB;
+   wire GTC;
+   wire GTD;
+   wire GTE;
+   wire GTF;
+   wire GTG;
+   wire GTH;
+   wire GT_1;
+   wire GT_3;
+   wire GT_5;
+   wire GT_7;
+   wire GT_9;
+   wire GT_11;
+   wire GT_13;
+   wire GT_15;
+   wire GT0_1;
+   wire GT2_3;
+   wire GT4_5;
+   wire GT6_7;
+   wire GT8_9;
+   wire GT10_11;
+   wire GT12_13;
+   wire LE0_1;
+   wire LE2_3;
+   wire LE4_5;
+   wire LE6_7;
+   wire LE8_9;
+   wire LE10_11;
+   wire LE12_13;
+   wire LE14_15;
+   wire LTA;
+   wire LTB;
+   wire LTC;
+   wire LTD;
+   wire LTE;
+   wire LTF;
+   wire LTG;
+   wire LTH;
+   wire LT_1;
+   wire LT_3;
+   wire LT_5;
+   wire LT_7;
+   wire LT_9;
+   wire LT_11;
+   wire LT_13;
+   wire LT_15;
+   wire LT0_1;
+   wire LT2_3;
+   wire LT4_5;
+   wire LT6_7;
+   wire LT8_9;
+   wire LT10_11;
+   wire LT12_13;
+   
+   AND2B1 I_36_9 (.I0(A[7]), 
+                  .I1(B[7]), 
+                  .O(LT_7));
+   NOR2 I_36_10 (.I0(GT6_7), 
+                 .I1(LT6_7), 
+                 .O(EQ6_7));
+   AND2B1 I_36_11 (.I0(B[7]), 
+                   .I1(A[7]), 
+                   .O(GT_7));
+   XNOR2 I_36_12 (.I0(A[7]), 
+                  .I1(B[7]), 
+                  .O(EQ_7));
+   AND3B1 I_36_13 (.I0(B[6]), 
+                   .I1(EQ_7), 
+                   .I2(A[6]), 
+                   .O(GE6_7));
+   AND3B1 I_36_14 (.I0(A[6]), 
+                   .I1(EQ_7), 
+                   .I2(B[6]), 
+                   .O(LE6_7));
+   OR2 I_36_15 (.I0(GT_7), 
+                .I1(GE6_7), 
+                .O(GT6_7));
+   OR2 I_36_16 (.I0(LT_7), 
+                .I1(LE6_7), 
+                .O(LT6_7));
+   AND2 I_36_22 (.I0(EQ8_15), 
+                 .I1(LT6_7), 
+                 .O(LTD));
+   AND2 I_36_23 (.I0(GT6_7), 
+                 .I1(EQ8_15), 
+                 .O(GTD));
+   AND4 I_36_24 (.I0(GT2_3), 
+                 .I1(EQ4_5), 
+                 .I2(EQ6_7), 
+                 .I3(EQ8_15), 
+                 .O(GTB));
+   AND4 I_36_25 (.I0(EQ8_15), 
+                 .I1(EQ6_7), 
+                 .I2(EQ4_5), 
+                 .I3(LT2_3), 
+                 .O(LTB));
+   NOR2 I_36_35 (.I0(GT2_3), 
+                 .I1(LT2_3), 
+                 .O(EQ2_3));
+   AND2B1 I_36_36 (.I0(B[3]), 
+                   .I1(A[3]), 
+                   .O(GT_3));
+   AND2B1 I_36_37 (.I0(A[1]), 
+                   .I1(B[1]), 
+                   .O(LT_1));
+   XNOR2 I_36_38 (.I0(A[3]), 
+                  .I1(B[3]), 
+                  .O(EQ_3));
+   AND2B1 I_36_39 (.I0(B[1]), 
+                   .I1(A[1]), 
+                   .O(GT_1));
+   AND3B1 I_36_40 (.I0(B[2]), 
+                   .I1(EQ_3), 
+                   .I2(A[2]), 
+                   .O(GE2_3));
+   AND3B1 I_36_41 (.I0(A[2]), 
+                   .I1(EQ_3), 
+                   .I2(B[2]), 
+                   .O(LE2_3));
+   OR2 I_36_42 (.I0(GT_1), 
+                .I1(GE0_1), 
+                .O(GT0_1));
+   OR2 I_36_43 (.I0(GT_3), 
+                .I1(GE2_3), 
+                .O(GT2_3));
+   OR2 I_36_44 (.I0(LT_3), 
+                .I1(LE2_3), 
+                .O(LT2_3));
+   OR2 I_36_50 (.I0(LT_1), 
+                .I1(LE0_1), 
+                .O(LT0_1));
+   XNOR2 I_36_51 (.I0(A[1]), 
+                  .I1(B[1]), 
+                  .O(EQ_1));
+   AND3B1 I_36_52 (.I0(A[0]), 
+                   .I1(EQ_1), 
+                   .I2(B[0]), 
+                   .O(LE0_1));
+   AND5 I_36_53 (.I0(EQ8_15), 
+                 .I1(EQ6_7), 
+                 .I2(EQ4_5), 
+                 .I3(EQ2_3), 
+                 .I4(LT0_1), 
+                 .O(LTA));
+   AND3B1 I_36_54 (.I0(B[0]), 
+                   .I1(EQ_1), 
+                   .I2(A[0]), 
+                   .O(GE0_1));
+   AND5 I_36_55 (.I0(GT0_1), 
+                 .I1(EQ2_3), 
+                 .I2(EQ4_5), 
+                 .I3(EQ6_7), 
+                 .I4(EQ8_15), 
+                 .O(GTA));
+   AND3 I_36_57 (.I0(GT4_5), 
+                 .I1(EQ6_7), 
+                 .I2(EQ8_15), 
+                 .O(GTC));
+   AND3 I_36_58 (.I0(EQ8_15), 
+                 .I1(EQ6_7), 
+                 .I2(LT4_5), 
+                 .O(LTC));
+   NOR2 I_36_59 (.I0(GT10_11), 
+                 .I1(LT10_11), 
+                 .O(EQ10_11));
+   AND3 I_36_60 (.I0(EQ14_15), 
+                 .I1(EQ12_13), 
+                 .I2(LT10_11), 
+                 .O(LTF));
+   AND2 I_36_61 (.I0(GT12_13), 
+                 .I1(EQ14_15), 
+                 .O(GTG));
+   AND2 I_36_62 (.I0(EQ14_15), 
+                 .I1(LT12_13), 
+                 .O(LTG));
+   AND4 I_36_63 (.I0(EQ14_15), 
+                 .I1(EQ12_13), 
+                 .I2(EQ10_11), 
+                 .I3(LT8_9), 
+                 .O(LTE));
+   AND4 I_36_64 (.I0(GT8_9), 
+                 .I1(EQ10_11), 
+                 .I2(EQ12_13), 
+                 .I3(EQ14_15), 
+                 .O(GTE));
+   AND3 I_36_65 (.I0(GT10_11), 
+                 .I1(EQ12_13), 
+                 .I2(EQ14_15), 
+                 .O(GTF));
+   OR2 I_36_66 (.I0(LT_15), 
+                .I1(LE14_15), 
+                .O(LTH));
+   OR2 I_36_67 (.I0(GT_15), 
+                .I1(GE14_15), 
+                .O(GTH));
+   OR2 I_36_68 (.I0(GT_13), 
+                .I1(GE12_13), 
+                .O(GT12_13));
+   AND3B1 I_36_69 (.I0(A[12]), 
+                   .I1(EQ_13), 
+                   .I2(B[12]), 
+                   .O(LE12_13));
+   AND3B1 I_36_70 (.I0(B[12]), 
+                   .I1(EQ_13), 
+                   .I2(A[12]), 
+                   .O(GE12_13));
+   AND3B1 I_36_71 (.I0(A[14]), 
+                   .I1(EQ_15), 
+                   .I2(B[14]), 
+                   .O(LE14_15));
+   AND3B1 I_36_72 (.I0(B[14]), 
+                   .I1(EQ_15), 
+                   .I2(A[14]), 
+                   .O(GE14_15));
+   XNOR2 I_36_73 (.I0(A[13]), 
+                  .I1(B[13]), 
+                  .O(EQ_13));
+   AND2B1 I_36_74 (.I0(B[13]), 
+                   .I1(A[13]), 
+                   .O(GT_13));
+   XNOR2 I_36_75 (.I0(A[15]), 
+                  .I1(B[15]), 
+                  .O(EQ_15));
+   AND2B1 I_36_76 (.I0(A[13]), 
+                   .I1(B[13]), 
+                   .O(LT_13));
+   AND2B1 I_36_77 (.I0(B[15]), 
+                   .I1(A[15]), 
+                   .O(GT_15));
+   OR2 I_36_78 (.I0(LT_13), 
+                .I1(LE12_13), 
+                .O(LT12_13));
+   NOR2 I_36_79 (.I0(GTH), 
+                 .I1(LTH), 
+                 .O(EQ14_15));
+   AND2B1 I_36_80 (.I0(A[11]), 
+                   .I1(B[11]), 
+                   .O(LT_11));
+   OR2 I_36_81 (.I0(LT_9), 
+                .I1(LE8_9), 
+                .O(LT8_9));
+   AND2B1 I_36_82 (.I0(B[11]), 
+                   .I1(A[11]), 
+                   .O(GT_11));
+   AND2B1 I_36_83 (.I0(A[9]), 
+                   .I1(B[9]), 
+                   .O(LT_9));
+   XNOR2 I_36_84 (.I0(A[11]), 
+                  .I1(B[11]), 
+                  .O(EQ_11));
+   AND2B1 I_36_85 (.I0(B[9]), 
+                   .I1(A[9]), 
+                   .O(GT_9));
+   XNOR2 I_36_86 (.I0(A[9]), 
+                  .I1(B[9]), 
+                  .O(EQ_9));
+   AND3B1 I_36_87 (.I0(B[10]), 
+                   .I1(EQ_11), 
+                   .I2(A[10]), 
+                   .O(GE10_11));
+   AND3B1 I_36_88 (.I0(A[10]), 
+                   .I1(EQ_11), 
+                   .I2(B[10]), 
+                   .O(LE10_11));
+   AND3B1 I_36_89 (.I0(B[8]), 
+                   .I1(EQ_9), 
+                   .I2(A[8]), 
+                   .O(GE8_9));
+   AND3B1 I_36_90 (.I0(A[8]), 
+                   .I1(EQ_9), 
+                   .I2(B[8]), 
+                   .O(LE8_9));
+   OR2 I_36_91 (.I0(GT_9), 
+                .I1(GE8_9), 
+                .O(GT8_9));
+   OR2 I_36_92 (.I0(GT_11), 
+                .I1(GE10_11), 
+                .O(GT10_11));
+   OR2 I_36_93 (.I0(LT_11), 
+                .I1(LE10_11), 
+                .O(LT10_11));
+   NOR2 I_36_94 (.I0(GT12_13), 
+                 .I1(LT12_13), 
+                 .O(EQ12_13));
+   AND2B1 I_36_95 (.I0(A[15]), 
+                   .I1(B[15]), 
+                   .O(LT_15));
+   NOR2 I_36_96 (.I0(GT4_5), 
+                 .I1(LT4_5), 
+                 .O(EQ4_5));
+   OR2 I_36_97 (.I0(LT_5), 
+                .I1(LE4_5), 
+                .O(LT4_5));
+   AND2B1 I_36_98 (.I0(A[5]), 
+                   .I1(B[5]), 
+                   .O(LT_5));
+   AND2B1 I_36_99 (.I0(B[5]), 
+                   .I1(A[5]), 
+                   .O(GT_5));
+   XNOR2 I_36_100 (.I0(A[5]), 
+                   .I1(B[5]), 
+                   .O(EQ_5));
+   AND3B1 I_36_101 (.I0(B[4]), 
+                    .I1(EQ_5), 
+                    .I2(A[4]), 
+                    .O(GE4_5));
+   AND3B1 I_36_102 (.I0(A[4]), 
+                    .I1(EQ_5), 
+                    .I2(B[4]), 
+                    .O(LE4_5));
+   OR2 I_36_103 (.I0(GT_5), 
+                 .I1(GE4_5), 
+                 .O(GT4_5));
+   NOR2 I_36_111 (.I0(GT8_9), 
+                  .I1(LT8_9), 
+                  .O(EQ8_9));
+   AND2B1 I_36_114 (.I0(A[3]), 
+                    .I1(B[3]), 
+                    .O(LT_3));
+   OR8_MXILINX_Project I_36_124 (.I0(LTH), 
+                                 .I1(LTG), 
+                                 .I2(LTF), 
+                                 .I3(LTE), 
+                                 .I4(LTD), 
+                                 .I5(LTC), 
+                                 .I6(LTB), 
+                                 .I7(LTA), 
+                                 .O(LT));
+   // synthesis attribute HU_SET of I_36_124 is "I_36_124_3"
+   OR8_MXILINX_Project I_36_125 (.I0(GTD), 
+                                 .I1(GTC), 
+                                 .I2(GTB), 
+                                 .I3(GTA), 
+                                 .I4(GTH), 
+                                 .I5(GTG), 
+                                 .I6(GTF), 
+                                 .I7(GTE), 
+                                 .O(GT));
+   // synthesis attribute HU_SET of I_36_125 is "I_36_125_2"
+   AND4 I_36_162 (.I0(EQ14_15), 
+                  .I1(EQ12_13), 
+                  .I2(EQ10_11), 
+                  .I3(EQ8_9), 
+                  .O(EQ8_15));
+endmodule
+`timescale 1ns / 1ps
+
+module Project(button1, 
+               enkoderA, 
+               enkoderB, 
+               sync, 
+               a, 
+               b, 
+               c, 
+               d, 
+               e, 
+               f, 
+               g, 
+               led1, 
+               led2, 
+               t1, 
+               t2, 
+               t3, 
+               t4);
+
+    input button1;
+    input enkoderA;
+    input enkoderB;
+    input sync;
+   output a;
+   output b;
+   output c;
+   output d;
+   output e;
+   output f;
+   output g;
+   output led1;
+   output led2;
+   output t1;
+   output t2;
+   output t3;
+   output t4;
+   
+   wire [15:0] mag;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_24;
+   wire XLXN_42;
+   wire XLXN_139;
+   wire XLXN_140;
+   wire XLXN_152;
+   wire XLXN_153;
+   wire [15:0] XLXN_155;
+   wire XLXN_225;
+   wire XLXN_227;
+   wire XLXN_228;
+   wire XLXN_229;
+   wire XLXN_232;
+   wire XLXN_237;
+   wire XLXN_238;
+   wire XLXN_239;
+   wire XLXN_292;
+   wire XLXN_356;
+   wire XLXN_366;
+   
+   assign XLXN_155 = 16'h1234;
+   display7segment XLXI_17 (.l1b0(XLXN_4), 
+                            .l1b1(XLXN_5), 
+                            .l1b2(XLXN_6), 
+                            .l1b3(XLXN_7), 
+                            .l2b0(XLXN_8), 
+                            .l2b1(XLXN_9), 
+                            .l2b2(XLXN_10), 
+                            .l2b3(XLXN_11), 
+                            .l3b0(XLXN_12), 
+                            .l3b1(XLXN_14), 
+                            .l3b2(XLXN_18), 
+                            .l3b3(XLXN_19), 
+                            .l4b0(XLXN_20), 
+                            .l4b1(XLXN_21), 
+                            .l4b2(XLXN_139), 
+                            .l4b3(XLXN_140), 
+                            .sync(sync), 
+                            .a(a), 
+                            .b(b), 
+                            .c(c), 
+                            .d(d), 
+                            .e(e), 
+                            .f(f), 
+                            .g(g), 
+                            .t1(t1), 
+                            .t2(t2), 
+                            .t3(t3), 
+                            .t4(t4));
+   cb4cled_x4 XLXI_18 (.CE(XLXN_42), 
+                       .CLR(XLXN_24), 
+                       .C0_c(XLXN_232), 
+                       .C0_up(XLXN_366), 
+                       .C1_c(XLXN_237), 
+                       .C1_up(XLXN_366), 
+                       .C2_c(XLXN_238), 
+                       .C2_up(XLXN_366), 
+                       .C3_c(XLXN_239), 
+                       .C3_up(XLXN_366), 
+                       .D0(XLXN_42), 
+                       .D1(XLXN_42), 
+                       .D2(XLXN_42), 
+                       .D3(XLXN_42), 
+                       .L(XLXN_24), 
+                       .sync(sync), 
+                       .C0_Q0(XLXN_4), 
+                       .C0_Q1(XLXN_5), 
+                       .C0_Q2(XLXN_6), 
+                       .C0_Q3(XLXN_7), 
+                       .C1_Q0(XLXN_8), 
+                       .C1_Q1(XLXN_9), 
+                       .C1_Q2(XLXN_10), 
+                       .C1_Q3(XLXN_11), 
+                       .C2_Q0(XLXN_12), 
+                       .C2_Q1(XLXN_14), 
+                       .C2_Q2(XLXN_18), 
+                       .C2_Q3(XLXN_19), 
+                       .C3_Q0(XLXN_20), 
+                       .C3_Q1(XLXN_21), 
+                       .C3_Q2(XLXN_139), 
+                       .C3_Q3(XLXN_140), 
+                       .mag(mag[15:0]));
+   GND XLXI_19 (.G(XLXN_24));
+   VCC XLXI_20 (.P(XLXN_42));
+   AND2 XLXI_21 (.I0(XLXN_232), 
+                 .I1(XLXN_232), 
+                 .O(led1));
+   COMPM16_MXILINX_Project XLXI_37 (.A(mag[15:0]), 
+                                    .B(XLXN_155[15:0]), 
+                                    .GT(XLXN_152), 
+                                    .LT(XLXN_153));
+   // synthesis attribute HU_SET of XLXI_37 is "XLXI_37_4"
+   AND2B2 XLXI_38 (.I0(XLXN_153), 
+                   .I1(XLXN_152), 
+                   .O(led2));
+   demux4 XLXI_39 (.clk(XLXN_356), 
+                   .In0(XLXN_227), 
+                   .In1(XLXN_225), 
+                   .Out0(XLXN_232), 
+                   .Out1(XLXN_237), 
+                   .Out2(XLXN_238), 
+                   .Out3(XLXN_239));
+   CB2RE_MXILINX_Project XLXI_40 (.C(XLXN_292), 
+                                  .CE(XLXN_228), 
+                                  .R(XLXN_229), 
+                                  .CEO(), 
+                                  .Q0(XLXN_227), 
+                                  .Q1(XLXN_225), 
+                                  .TC());
+   // synthesis attribute HU_SET of XLXI_40 is "XLXI_40_5"
+   VCC XLXI_51 (.P(XLXN_228));
+   GND XLXI_52 (.G(XLXN_229));
+   FD XLXI_58 (.C(sync), 
+               .D(button1), 
+               .Q(XLXN_292));
+   defparam XLXI_58.INIT = 1'b0;
+   enkoder XLXI_74 (.A(enkoderA), 
+                    .B(enkoderB), 
+                    .sync(sync), 
+                    .Dir(XLXN_366), 
+                    .Q(XLXN_356));
+endmodule

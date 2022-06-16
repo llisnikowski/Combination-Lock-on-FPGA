@@ -1,0 +1,121 @@
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+sch2verilog -intstyle ise -family spartan3e   -w "D:/student/LLVI/Xilinx/Projekt/Project.sch" Project.vf
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd
+xst -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -ifn "D:/student/LLVI/Xilinx/Projekt/Project.xst" -ofn "D:/student/LLVI/Xilinx/Projekt/Project.syr"
+ngdbuild -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s100e-cp132-5 "Project.ngc" Project.ngd
+map -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -p xc3s100e-cp132-5 -cm area -pr off -k 4 -c 100 -o Project_map.ncd Project.ngd Project.pcf
+par -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -w -intstyle ise -ol std -t 1 Project_map.ncd Project.ncd Project.pcf
+trce -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -e 3 -s 5 -xml Project Project.ncd -o Project.twr Project.pcf -ucf Project.ucf
+bitgen -ise "D:/student/LLVI/Xilinx/Projekt/Projekt.ise" -intstyle ise -f Project.ut Project.ncd

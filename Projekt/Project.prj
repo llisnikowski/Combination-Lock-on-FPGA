@@ -1,0 +1,6 @@
+verilog work "binhex1.vf"
+verilog work "enkoder.vf"
+verilog work "display7segment.vf"
+verilog work "demux4.vf"
+verilog work "cb4cled_x4.vf"
+verilog work "Project.vf"
